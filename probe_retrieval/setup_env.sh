@@ -18,16 +18,17 @@ echo "✓ Conda found"
 
 # 创建环境
 ENV_NAME="probe_retrieval"
+ENV_PREFIX="/network/rit/lab/wang_lab_cs/yhan/envs/probe_retrieval"
 PYTHON_VERSION="3.10"
 
 echo ""
-echo "Creating conda environment: $ENV_NAME (Python $PYTHON_VERSION)"
-conda create -n $ENV_NAME python=$PYTHON_VERSION -y
+echo "Creating conda environment at: $ENV_PREFIX (Python $PYTHON_VERSION)"
+conda create -p $ENV_PREFIX python=$PYTHON_VERSION -y
 
 echo ""
 echo "Activating environment..."
 source $(conda info --base)/etc/profile.d/conda.sh
-conda activate $ENV_NAME
+conda activate $ENV_PREFIX
 
 # 检查CUDA
 if command -v nvidia-smi &> /dev/null; then
@@ -90,7 +91,7 @@ echo "✅ Environment setup complete!"
 echo "========================================="
 echo ""
 echo "To activate the environment:"
-echo "  conda activate $ENV_NAME"
+echo "  conda activate $ENV_PREFIX"
 echo ""
 echo "To test the installation:"
 echo "  python test_pipeline.py"

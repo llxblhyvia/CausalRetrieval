@@ -77,7 +77,7 @@ class OpenVLAPolicy:
             proprio: 机器人状态（可选）
         
         Returns:
-            action: [delta_x, delta_y, delta_z, delta_rot_x, delta_rot_y, delta_rot_z, gripper]
+            action: [j1, j2, j3, j4, j5, j6, j7, gripper] - 8D joint angles for Panda
         """
         self.load()  # 确保模型已加载
         
@@ -112,26 +112,26 @@ class OpenVLAPolicy:
         # 简化版本：假设OpenVLA直接输出action embeddings
         # 实际可能需要更复杂的解码过程
         
-        # Placeholder: 返回一个7维动作
+        # Placeholder: 返回一个8维动作
         # 实际应该调用processor的decode方法
         decoded_text = self.processor.batch_decode(output_tokens, skip_special_tokens=True)[0]
         
-        # OpenVLA的action通常编码为文本，如 "[0.1, 0.2, -0.05, 0, 0, 0, 1.0]"
+        # OpenVLA的action通常编码为文本，如 "[0.1, 0.2, -0.05, 0, 0, 0, 0, 1.0]"
         try:
             # 尝试解析为数值列表
             action_str = decoded_text.strip('[]').split(',')
             action = np.array([float(x) for x in action_str])
             
-            # 确保是7维
-            if len(action) != 7:
-                print(f"Warning: decoded action has {len(action)} dims, expected 7")
-                action = np.zeros(7)
+            # 确保是8维
+            if len(action) != 8:
+                print(f"Warning: decoded action has {len(action)} dims, expected 8")
+                action = np.zeros(8)
             
             return action
         
         except:
             print(f"Warning: failed to decode action from: {decoded_text}")
-            return np.zeros(7)  # 失败时返回零动作
+            return np.zeros(8)  # 失败时返回零动作
     
     def reset(self):
         """重置策略状态（如果有内部状态的话）"""
@@ -157,14 +157,13 @@ class DummyVLAPolicy:
         proprio: Optional[np.ndarray] = None,
     ) -> np.ndarray:
         """返回随机动作"""
-        # delta_pos: [-0.05, 0.05]
-        delta_pos = np.random.uniform(-0.05, 0.05, size=3)
-        # delta_rot: [-0.1, 0.1]
-        delta_rot = np.random.uniform(-0.1, 0.1, size=3)
-        # gripper: [-1, 1]
+        # For ManiSkill Panda robot: 7 joint angles + gripper width = 8 dims
+        # Joint angles: roughly [-π, π] for most joints
+        joint_angles = np.random.uniform(-np.pi, np.pi, size=7)
+        # Gripper: [-1, 1] (closed to open)
         gripper = np.random.uniform(-1, 1, size=1)
         
-        return np.concatenate([delta_pos, delta_rot, gripper])
+        return np.concatenate([joint_angles, gripper])
     
     def reset(self):
         pass

@@ -8,11 +8,27 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python run_collection.py --task PushCube-v1 --num-e
 """
 import argparse
 import os
-import torch
-import torch.multiprocessing as mp
+try:
+    import torch
+    import torch.multiprocessing as mp
+except ImportError:
+    import multiprocessing as mp
+    torch = None
 from pathlib import Path
-import gymnasium as gym
+try:
+    import gymnasium as gym
+except ImportError:
+    try:
+        import gym
+    except ImportError:
+        raise ImportError(
+            "Please install gymnasium or gym in your environment before running run_collection.py. "
+            "For example: conda activate probe_retrieval && pip install gymnasium mani-skill"
+        )
 import numpy as np
+
+# 必须先导入mani_skill.envs来注册环境
+import mani_skill.envs
 
 from data_collection.collector import ProbeDataCollector
 from data_collection.vla_policy import create_vla_policy
@@ -62,31 +78,21 @@ def collect_on_gpu(
     )
     policy.load()
     
-    # 创建向量化环境
-    print(f"GPU {gpu_id}: Creating {num_envs} parallel environments...")
+    # 创建环境（简化版本，不使用vectorized env）
+    print(f"GPU {gpu_id}: Creating environment...")
     
     def make_env():
         """环境工厂函数"""
+        import mani_skill.envs
         env = gym.make(
             task_name,
-            obs_mode="rgbd",  # RGB-D观测
-            control_mode="pd_ee_delta_pose",  # 末端增量控制
-            render_mode="rgb_array",
-            # ManiSkill特定参数
-            sim_backend="auto",  # 自动选择GPU物理引擎
+            obs_mode='rgbd',  # 需要RGB图像
+            render_mode='rgb_array',
         )
+        print(f"✓ Successfully created environment: {task_name}")
         return env
     
-    # 创建向量化环境
-    envs = gym.vector.AsyncVectorEnv([make_env for _ in range(num_envs)])
-    
-    # 为每个环境创建collector
-    # 注意：这里简化处理，实际上vectorized env需要特殊处理
-    # 暂时先用单环境版本，后面可以优化
-    
-    print(f"GPU {gpu_id}: Starting collection loop...")
-    
-    # 单环境收集（可以后续改成vectorized）
+    # 直接创建单个环境（因为num_envs=1）
     env = make_env()
     collector = ProbeDataCollector(
         env=env,
@@ -234,7 +240,8 @@ def merge_statistics(base_dir: str, gpu_ids: list):
         
         # 统计这个GPU的数据
         hdf5_files = list(gpu_dir.glob("episode_*.hdf5"))
-        gpu_episodes = len(hdf5_files)
+        npz_files = list(gpu_dir.glob("episode_*.npz"))
+        gpu_episodes = len(hdf5_files) + len(npz_files)
         
         # 读取成功率（简化版本，实际需要读取HDF5）
         # 这里暂时跳过
@@ -244,7 +251,7 @@ def merge_statistics(base_dir: str, gpu_ids: list):
         'total_episodes': total_episodes,
         'num_gpus': len(gpu_ids),
         'gpu_ids': gpu_ids,
-        'episodes_per_gpu': [len(list((base_path / f"gpu_{gid}").glob("episode_*.hdf5"))) 
+        'episodes_per_gpu': [len(list((base_path / f"gpu_{gid}").glob("episode_*.hdf5"))) + len(list((base_path / f"gpu_{gid}").glob("episode_*.npz"))) 
                              for gid in gpu_ids if (base_path / f"gpu_{gid}").exists()],
     }
     

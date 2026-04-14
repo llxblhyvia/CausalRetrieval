@@ -1,0 +1,44 @@
+Requirement already satisfied: numpy in /network/rit/lab/wang_lab_cs/yhan/envs/probe_retrieval/lib/python3.10/site-packages (2.2.6)
+Collecting gymnasium
+  Using cached gymnasium-1.2.3-py3-none-any.whl.metadata (10 kB)
+Collecting h5py
+  Using cached h5py-3.16.0-cp310-cp310-manylinux_2_28_x86_64.whl.metadata (3.0 kB)
+Collecting matplotlib
+  Downloading matplotlib-3.10.8-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (52 kB)
+Collecting cloudpickle>=1.2.0 (from gymnasium)
+  Downloading cloudpickle-3.1.2-py3-none-any.whl.metadata (7.1 kB)
+Requirement already satisfied: typing-extensions>=4.3.0 in /network/rit/lab/wang_lab_cs/yhan/envs/probe_retrieval/lib/python3.10/site-packages (from gymnasium) (4.15.0)
+Collecting farama-notifications>=0.0.1 (from gymnasium)
+  Using cached Farama_Notifications-0.0.4-py3-none-any.whl.metadata (558 bytes)
+Collecting contourpy>=1.0.1 (from matplotlib)
+  Downloading contourpy-1.3.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (5.5 kB)
+Collecting cycler>=0.10 (from matplotlib)
+  Downloading cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)
+Collecting fonttools>=4.22.0 (from matplotlib)
+  Downloading fonttools-4.62.1-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (117 kB)
+Collecting kiwisolver>=1.3.1 (from matplotlib)
+  Downloading kiwisolver-1.5.0-cp310-cp310-manylinux_2_12_x86_64.manylinux2010_x86_64.whl.metadata (5.1 kB)
+Requirement already satisfied: packaging>=20.0 in /network/rit/lab/wang_lab_cs/yhan/envs/probe_retrieval/lib/python3.10/site-packages (from matplotlib) (26.0)
+Requirement already satisfied: pillow>=8 in /network/rit/lab/wang_lab_cs/yhan/envs/probe_retrieval/lib/python3.10/site-packages (from matplotlib) (12.1.1)
+Collecting pyparsing>=3 (from matplotlib)
+  Downloading pyparsing-3.3.2-py3-none-any.whl.metadata (5.8 kB)
+Requirement already satisfied: python-dateutil>=2.7 in /network/rit/home/yhan_wang_lab_cs/.local/lib/python3.10/site-packages (from matplotlib) (2.9.0.post0)
+Collecting six>=1.5 (from python-dateutil>=2.7->matplotlib)
+  Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Using cached gymnasium-1.2.3-py3-none-any.whl (952 kB)
+Using cached h5py-3.16.0-cp310-cp310-manylinux_2_28_x86_64.whl (5.1 MB)
+Downloading matplotlib-3.10.8-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (8.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.7/8.7 MB 118.8 MB/s  0:00:00
+Downloading cloudpickle-3.1.2-py3-none-any.whl (22 kB)
+Downloading contourpy-1.3.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (325 kB)
+Downloading cycler-0.12.1-py3-none-any.whl (8.3 kB)
+Using cached Farama_Notifications-0.0.4-py3-none-any.whl (2.5 kB)
+Downloading fonttools-4.62.1-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (4.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.9/4.9 MB 91.1 MB/s  0:00:00
+Downloading kiwisolver-1.5.0-cp310-cp310-manylinux_2_12_x86_64.manylinux2010_x86_64.whl (1.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.6/1.6 MB 69.0 MB/s  0:00:00
+Downloading pyparsing-3.3.2-py3-none-any.whl (122 kB)
+Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+Installing collected packages: farama-notifications, six, pyparsing, kiwisolver, h5py, fonttools, cycler, contourpy, cloudpickle, gymnasium, matplotlib
+
+Successfully installed cloudpickle-3.1.2 contourpy-1.3.2 cycler-0.12.1 farama-notifications-0.0.4 fonttools-4.62.1 gymnasium-1.2.3 h5py-3.16.0 kiwisolver-1.5.0 matplotlib-3.10.8 pyparsing-3.3.2 six-1.17.0
