@@ -1,0 +1,13 @@
+numpy>=1.24.0,<2.0.0
+PyYAML>=6.0.0
+pillow>=10.0.0
+opencv-python==4.9.0.80
+
+# Install these only for real OpenVLA/LIBERO runs, preferably following the
+# official OpenVLA-OFT instructions for exact compatible versions.
+# torch
+# transformers>=4.36.0
+# accelerate
+# libero
+# robosuite
+# mujoco

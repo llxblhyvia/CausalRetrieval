@@ -1,0 +1,7 @@
+{
+  "log_path": "artifacts/clean_env_test/collection_episodes.jsonl",
+  "memory_dir": "artifacts/clean_env_test/memory_bank",
+  "num_episodes": 10,
+  "num_items": 10,
+  "success_rate": 1.0
+}

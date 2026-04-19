@@ -1,0 +1,7 @@
+{
+  "log_path": "artifacts/real_collect_10/collection_episodes.jsonl",
+  "memory_dir": "artifacts/real_collect_10/memory_bank",
+  "num_episodes": 100,
+  "num_items": 100,
+  "success_rate": 1.0
+}

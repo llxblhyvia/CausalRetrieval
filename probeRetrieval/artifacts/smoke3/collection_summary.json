@@ -1,0 +1,7 @@
+{
+  "log_path": "artifacts/smoke3/collection_episodes.jsonl",
+  "memory_dir": "artifacts/smoke3/memory_bank",
+  "num_episodes": 10,
+  "num_items": 10,
+  "success_rate": 0.0
+}

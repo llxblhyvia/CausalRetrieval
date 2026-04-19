@@ -1,0 +1,6 @@
+inherits: default.yaml
+env:
+  mode: real
+policy:
+  mode: openvla
+num_trials_per_task: 5

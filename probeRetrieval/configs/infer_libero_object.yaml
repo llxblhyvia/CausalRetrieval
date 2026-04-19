@@ -1,0 +1,11 @@
+inherits: default.yaml
+env:
+  mode: real
+policy:
+  mode: openvla
+num_trials_per_task: 10
+retrieval:
+  top_k: 10
+  rerank_top_k: 5
+fusion:
+  alpha: 0.5

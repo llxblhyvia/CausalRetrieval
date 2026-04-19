@@ -1,0 +1,78 @@
+seed: 0
+task_suite_name: libero_object
+checkpoint: /network/rit/lab/wang_lab_cs/yhan/repos/openvla-7b-oft
+center_crop: true
+num_trials_per_task: 1
+max_steps: 220
+control_hz: 20
+
+paths:
+  output_dir: artifacts
+  memory_dir: artifacts/memory_bank
+  log_dir: artifacts/logs
+  hf_home: /network/rit/lab/wang_lab_cs/yhan/hf_cache
+  env_root: /network/rit/lab/wang_lab_cs/yhan/envs
+  openvla_oft_repo: /network/rit/lab/wang_lab_cs/yhan/repos/openvla-oft
+  libero_repo: /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO
+
+env:
+  mode: mock
+  image_key_candidates:
+    - agentview_image
+    - image
+    - rgb
+  eef_key_candidates:
+    - robot0_eef_pos
+    - eef_pos
+    - ee_pos
+  gripper_key_candidates:
+    - robot0_gripper_qpos
+    - gripper_qpos
+    - gripper
+  object_key_candidates:
+    - target_object_pos
+    - object_pos
+    - obj_pos
+  target_object_name: null
+  env_factory: null
+
+policy:
+  mode: mock
+  action_dim: 7
+  device: cuda
+  load_in_8bit: false
+
+contact:
+  use_filtered_contacts: true
+  gripper_name_patterns:
+    - gripper
+    - finger
+    - leftpad
+    - rightpad
+  target_name_patterns: []
+  min_contact_steps: 1
+
+probe:
+  num_close_steps: 2
+  num_lift_steps: 3
+  num_hold_steps: 1
+  close_delta: -0.15
+  lift_delta_z: 0.015
+  max_action_abs: 1.0
+
+retrieval:
+  image_backend: simple
+  top_k: 10
+  rerank_top_k: 5
+  successful_only: true
+  image_weight: 0.35
+  probe_weight: 0.65
+  eps: 1.0e-6
+
+fusion:
+  alpha: 0.5
+  max_steps: 30
+
+logging:
+  save_debug_frames: true
+  json_indent: 2
