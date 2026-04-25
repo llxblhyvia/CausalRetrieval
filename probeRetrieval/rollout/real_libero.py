@@ -17,6 +17,7 @@ from retrieval.image_retrieval import retrieve_top_k
 from retrieval.memory_bank import MemoryBank, MemoryItem
 from retrieval.probe_rerank import aggregate_retrieved_action, rerank_by_probe
 from rollout.rollout_utils import append_jsonl, ensure_dir, seed_everything, write_json
+from rollout.video_utils import FrameBuffer, extend_frames, should_save_video, write_video
 from vla.openvla_policy import fuse_actions
 
 
@@ -285,8 +286,20 @@ def collect_real_episode(
     success = False
     detector = ContactDetector(cfg)
     detector.reset()
+    log_cfg = cfg.get("logging", {})
+    save_videos = bool(log_cfg.get("save_videos", False))
+    video_every = int(log_cfg.get("video_every", 0))
+    video_fps = int(log_cfg.get("video_fps", 20))
+    record_video = save_videos and should_save_video(episode_idx, max(video_every, 1))
+    full_frames: list[np.ndarray] = []
+    pre_probe_frames = FrameBuffer(maxlen=int(log_cfg.get("probe_clip_pre_frames", video_fps)))
+    probe_frames: list[np.ndarray] = []
+    save_probe_clips = bool(log_cfg.get("save_probe_clips", True))
     for step in range(max_steps):
         observation, img = prepare_observation(obs, resize_size)
+        if record_video:
+            extend_frames(full_frames, [img])
+            pre_probe_frames.append(img)
         if len(action_queue) == 0:
             action_queue.extend(
                 get_real_action_chunk(
@@ -303,6 +316,8 @@ def collect_real_episode(
             contact_image = img.copy()
             trace = trace_with_augmented_obs(run_real_probe(env, augment_obs_for_features(obs), cfg))
             probe_features = extract_probe_features(trace, cfg)
+            if record_video:
+                extend_frames(probe_frames, [obs_i.get("agentview_image")[::-1, ::-1] for obs_i in trace.observations if "agentview_image" in obs_i])
             obs = trace.observations[-1]
             action_queue.clear()
             post_probe_actions = get_real_action_chunk(
@@ -318,11 +333,24 @@ def collect_real_episode(
             break
     if contact_triggered:
         image_path = None
+        video_path = None
+        probe_video_path = None
         if contact_image is not None and bool(cfg.get("logging", {}).get("save_debug_frames", True)):
             frame_dir = ensure_dir(output_dir / "frames")
             safe_task = task_description.replace(" ", "_")[:80]
             image_path = str(frame_dir / f"{task_id:02d}_{episode_idx:04d}_{safe_task}.npy")
             np.save(image_path, contact_image)
+        if record_video and full_frames:
+            video_dir = ensure_dir(output_dir / "videos")
+            safe_task = task_description.replace(" ", "_")[:80]
+            video_path = write_video(video_dir / f"{task_id:02d}_{episode_idx:04d}_{safe_task}.mp4", full_frames, fps=video_fps)
+            if save_probe_clips and probe_frames:
+                probe_clip = pre_probe_frames.to_list() + probe_frames
+                probe_video_path = write_video(
+                    video_dir / f"{task_id:02d}_{episode_idx:04d}_{safe_task}_probe.mp4",
+                    probe_clip,
+                    fps=video_fps,
+                )
         memory.add(
             MemoryItem(
                 episode_id=f"task_{task_id:02d}/trial_{episode_idx:04d}",
@@ -338,6 +366,8 @@ def collect_real_episode(
                     "probe_start_step": probe_start_step,
                     "probe_end_step": probe_end_step,
                     "contact_event": event.__dict__,
+                    "video_path": str(video_path) if video_path else None,
+                    "probe_video_path": str(probe_video_path) if probe_video_path else None,
                 },
             )
         )

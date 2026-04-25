@@ -1,0 +1,1040 @@
+2026-04-24 15:08:57.739834: E external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:9261] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2026-04-24 15:08:57.739893: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:607] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2026-04-24 15:08:57.741435: E external/local_xla/xla/stream_executor/cuda/cuda_blas.cc:1515] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2026-04-24 15:08:57.749459: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-04-24 15:09:00.405861: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+[robosuite WARNING] No private macro file found! (macros.py:53)
+[robosuite WARNING] It is recommended to use a private macro file (macros.py:54)
+[robosuite WARNING] To setup, run: python /network/rit/lab/wang_lab_cs/yhan/envs/probeRetrieval/lib/python3.10/site-packages/robosuite/scripts/setup_macros.py (macros.py:55)
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+Users of this version of Gym should be able to simply replace 'import gym' with 'import gymnasium as gym' in the vast majority of cases.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+/network/rit/lab/wang_lab_cs/yhan/envs/probeRetrieval/lib/python3.10/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+<frozen importlib._bootstrap>:283: DeprecationWarning: the load_module() method is deprecated and slated for removal in Python 3.12; use exec_module() instead
+Using LIBERO constants:
+  NUM_ACTIONS_CHUNK = 8
+  ACTION_DIM = 7
+  PROPRIO_DIM = 8
+  ACTION_PROPRIO_NORMALIZATION_TYPE = bounds_q99
+If needed, manually set the correct constants in `prismatic/vla/constants.py`!
+Instantiating pretrained VLA policy...
+Downloading shards:   0%|          | 0/4 [00:00<?, ?it/s]Downloading shards: 100%|██████████| 4/4 [00:00<00:00, 2742.27it/s]
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:01,  1.71it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  2.13it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:01<00:00,  1.98it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:01<00:00,  2.08it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:01<00:00,  2.03it/s]
+Loaded model: <class 'transformers_modules.openvla.openvla-7b.47a0ec7fc4ec123775a391911046cf33cf9ed83f.modeling_prismatic.OpenVLAForActionPrediction'>
+04/24 [15:09:51] INFO     | >> Logging to local log file: run_libero_eval.py:209
+                          /network/rit/lab/wang_lab_cs/yh                       
+                          an/CausalRetrieval/probeRetriev                       
+                          al/artifacts/goal_baseline_4gpu                       
+                          /20260424_150852/gpu3/logs/EVAL                       
+                          -libero_goal-openvla-2026_04_24                       
+                          -15_09_36.txt                                         
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+                 INFO     | >> Task suite: libero_goal    run_libero_eval.py:224
+                 INFO     | >> Selected task ids: [8, 9]  run_libero_eval.py:224
+  0%|          | 0/2 [00:00<?, ?it/s][Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+                 INFO     | >> Using default initial      run_libero_eval.py:224
+                          states                                                
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+
+  0%|          | 0/50 [00:00<?, ?it/s][A04/24 [15:09:53] INFO     | >>                            run_libero_eval.py:224
+                          Task: put the bowl on the plate                       
+                 INFO     | >> Starting episode 1...      run_libero_eval.py:224
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+WARNING: cfg.num_open_loop_steps (1) does not match the NUM_ACTIONS_CHUNK (8) constant defined in prismatic.vla.constants! For best performance (in terms of both speed and success rate), we recommend executing the full action chunk.
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-15_09_36--openvla_oft--episode=1--success=False--task=put_the_bowl_on_the_plate.mp4
+04/24 [15:14:03] INFO     | >> Success: False             run_libero_eval.py:224
+                 INFO     | >> # episodes completed so    run_libero_eval.py:224
+                          far: 1                                                
+                 INFO     | >> # successes: 0 (0.0%)      run_libero_eval.py:224
+
+  2%|▏         | 1/50 [04:10<3:24:19, 250.20s/it][A                 INFO     | >>                            run_libero_eval.py:224
+                          Task: put the bowl on the plate                       
+                 INFO     | >> Starting episode 2...      run_libero_eval.py:224
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+WARNING: cfg.num_open_loop_steps (1) does not match the NUM_ACTIONS_CHUNK (8) constant defined in prismatic.vla.constants! For best performance (in terms of both speed and success rate), we recommend executing the full action chunk.
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-15_09_36--openvla_oft--episode=2--success=True--task=put_the_bowl_on_the_plate.mp4
+04/24 [15:15:18] INFO     | >> Success: True              run_libero_eval.py:224
+                 INFO     | >> # episodes completed so    run_libero_eval.py:224
+                          far: 2                                                
+                 INFO     | >> # successes: 1 (50.0%)     run_libero_eval.py:224
+
+  4%|▍         | 2/50 [05:24<1:57:34, 146.97s/it][A                 INFO     | >>                            run_libero_eval.py:224
+                          Task: put the bowl on the plate                       
+                 INFO     | >> Starting episode 3...      run_libero_eval.py:224
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+WARNING: cfg.num_open_loop_steps (1) does not match the NUM_ACTIONS_CHUNK (8) constant defined in prismatic.vla.constants! For best performance (in terms of both speed and success rate), we recommend executing the full action chunk.
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-15_09_36--openvla_oft--episode=3--success=True--task=put_the_bowl_on_the_plate.mp4
+04/24 [15:17:27] INFO     | >> Success: True              run_libero_eval.py:224
+                 INFO     | >> # episodes completed so    run_libero_eval.py:224
+                          far: 3                                                
+                 INFO     | >> # successes: 2 (66.7%)     run_libero_eval.py:224
+
+  6%|▌         | 3/50 [07:33<1:48:39, 138.71s/it][A                 INFO     | >>                            run_libero_eval.py:224
+                          Task: put the bowl on the plate                       
+                 INFO     | >> Starting episode 4...      run_libero_eval.py:224
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+WARNING: cfg.num_open_loop_steps (1) does not match the NUM_ACTIONS_CHUNK (8) constant defined in prismatic.vla.constants! For best performance (in terms of both speed and success rate), we recommend executing the full action chunk.
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-15_09_36--openvla_oft--episode=4--success=False--task=put_the_bowl_on_the_plate.mp4
+04/24 [15:21:42] INFO     | >> Success: False             run_libero_eval.py:224
+                 INFO     | >> # episodes completed so    run_libero_eval.py:224
+                          far: 4                                                
+                 INFO     | >> # successes: 2 (50.0%)     run_libero_eval.py:224
+
+  8%|▊         | 4/50 [11:48<2:21:25, 184.46s/it][A                 INFO     | >>                            run_libero_eval.py:224
+                          Task: put the bowl on the plate                       
+                 INFO     | >> Starting episode 5...      run_libero_eval.py:224
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+WARNING: cfg.num_open_loop_steps (1) does not match the NUM_ACTIONS_CHUNK (8) constant defined in prismatic.vla.constants! For best performance (in terms of both speed and success rate), we recommend executing the full action chunk.
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-15_09_36--openvla_oft--episode=5--success=True--task=put_the_bowl_on_the_plate.mp4
+04/24 [15:22:55] INFO     | >> Success: True              run_libero_eval.py:224
+                 INFO     | >> # episodes completed so    run_libero_eval.py:224
+                          far: 5                                                
+                 INFO     | >> # successes: 3 (60.0%)     run_libero_eval.py:224
+
+ 10%|█         | 5/50 [13:01<1:48:12, 144.29s/it][A                 INFO     | >>                            run_libero_eval.py:224
+                          Task: put the bowl on the plate                       
+                 INFO     | >> Starting episode 6...      run_libero_eval.py:224
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+WARNING: cfg.num_open_loop_steps (1) does not match the NUM_ACTIONS_CHUNK (8) constant defined in prismatic.vla.constants! For best performance (in terms of both speed and success rate), we recommend executing the full action chunk.
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-15_09_36--openvla_oft--episode=6--success=True--task=put_the_bowl_on_the_plate.mp4
+04/24 [15:24:00] INFO     | >> Success: True              run_libero_eval.py:224
+                 INFO     | >> # episodes completed so    run_libero_eval.py:224
+                          far: 6                                                
+                 INFO     | >> # successes: 4 (66.7%)     run_libero_eval.py:224
+
+ 12%|█▏        | 6/50 [14:06<1:26:02, 117.33s/it][A                 INFO     | >>                            run_libero_eval.py:224
+                          Task: put the bowl on the plate                       
+                 INFO     | >> Starting episode 7...      run_libero_eval.py:224
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+WARNING: cfg.num_open_loop_steps (1) does not match the NUM_ACTIONS_CHUNK (8) constant defined in prismatic.vla.constants! For best performance (in terms of both speed and success rate), we recommend executing the full action chunk.
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-15_09_36--openvla_oft--episode=7--success=True--task=put_the_bowl_on_the_plate.mp4
+04/24 [15:24:59] INFO     | >> Success: True              run_libero_eval.py:224
+                 INFO     | >> # episodes completed so    run_libero_eval.py:224
+                          far: 7                                                
+                 INFO     | >> # successes: 5 (71.4%)     run_libero_eval.py:224
+
+ 14%|█▍        | 7/50 [15:06<1:10:33, 98.46s/it] [A                 INFO     | >>                            run_libero_eval.py:224
+                          Task: put the bowl on the plate                       
+                 INFO     | >> Starting episode 8...      run_libero_eval.py:224
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+WARNING: cfg.num_open_loop_steps (1) does not match the NUM_ACTIONS_CHUNK (8) constant defined in prismatic.vla.constants! For best performance (in terms of both speed and success rate), we recommend executing the full action chunk.
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-15_09_36--openvla_oft--episode=8--success=True--task=put_the_bowl_on_the_plate.mp4
+04/24 [15:26:10] INFO     | >> Success: True              run_libero_eval.py:224
+                 INFO     | >> # episodes completed so    run_libero_eval.py:224
+                          far: 8                                                
+                 INFO     | >> # successes: 6 (75.0%)     run_libero_eval.py:224
+
+ 16%|█▌        | 8/50 [16:17<1:02:51, 89.81s/it][A                 INFO     | >>                            run_libero_eval.py:224
+                          Task: put the bowl on the plate                       
+                 INFO     | >> Starting episode 9...      run_libero_eval.py:224
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+WARNING: cfg.num_open_loop_steps (1) does not match the NUM_ACTIONS_CHUNK (8) constant defined in prismatic.vla.constants! For best performance (in terms of both speed and success rate), we recommend executing the full action chunk.
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-15_09_36--openvla_oft--episode=9--success=False--task=put_the_bowl_on_the_plate.mp4
+04/24 [15:30:25] INFO     | >> Success: False             run_libero_eval.py:224
+                 INFO     | >> # episodes completed so    run_libero_eval.py:224
+                          far: 9                                                
+                 INFO     | >> # successes: 6 (66.7%)     run_libero_eval.py:224
+
+ 18%|█▊        | 9/50 [20:31<1:36:29, 141.20s/it][A                 INFO     | >>                            run_libero_eval.py:224
+                          Task: put the bowl on the plate                       
+                 INFO     | >> Starting episode 10...     run_libero_eval.py:224
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+WARNING: cfg.num_open_loop_steps (1) does not match the NUM_ACTIONS_CHUNK (8) constant defined in prismatic.vla.constants! For best performance (in terms of both speed and success rate), we recommend executing the full action chunk.
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-15_09_36--openvla_oft--episode=10--success=True--task=put_the_bowl_on_the_plate.mp4
+04/24 [15:31:34] INFO     | >> Success: True              run_libero_eval.py:224
+                 INFO     | >> # episodes completed so    run_libero_eval.py:224
+                          far: 10                                               
+                 INFO     | >> # successes: 7 (70.0%)     run_libero_eval.py:224
+
+ 20%|██        | 10/50 [21:40<1:19:16, 118.91s/it][A                 INFO     | >>                            run_libero_eval.py:224
+                          Task: put the bowl on the plate                       
+                 INFO     | >> Starting episode 11...     run_libero_eval.py:224
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+WARNING: cfg.num_open_loop_steps (1) does not match the NUM_ACTIONS_CHUNK (8) constant defined in prismatic.vla.constants! For best performance (in terms of both speed and success rate), we recommend executing the full action chunk.
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-15_09_36--openvla_oft--episode=11--success=False--task=put_the_bowl_on_the_plate.mp4
+04/24 [15:35:52] INFO     | >> Success: False             run_libero_eval.py:224
+                 INFO     | >> # episodes completed so    run_libero_eval.py:224
+                          far: 11                                               
+                 INFO     | >> # successes: 7 (63.6%)     run_libero_eval.py:224
+
+ 22%|██▏       | 11/50 [25:58<1:45:01, 161.58s/it][A                 INFO     | >>                            run_libero_eval.py:224
+                          Task: put the bowl on the plate                       
+                 INFO     | >> Starting episode 12...     run_libero_eval.py:224
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+WARNING: cfg.num_open_loop_steps (1) does not match the NUM_ACTIONS_CHUNK (8) constant defined in prismatic.vla.constants! For best performance (in terms of both speed and success rate), we recommend executing the full action chunk.
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-15_09_36--openvla_oft--episode=12--success=False--task=put_the_bowl_on_the_plate.mp4
+04/24 [15:40:13] INFO     | >> Success: False             run_libero_eval.py:224
+                 INFO     | >> # episodes completed so    run_libero_eval.py:224
+                          far: 12                                               
+                 INFO     | >> # successes: 7 (58.3%)     run_libero_eval.py:224
+
+ 24%|██▍       | 12/50 [30:20<2:01:32, 191.91s/it][A                 INFO     | >>                            run_libero_eval.py:224
+                          Task: put the bowl on the plate                       
+                 INFO     | >> Starting episode 13...     run_libero_eval.py:224
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+WARNING: cfg.num_open_loop_steps (1) does not match the NUM_ACTIONS_CHUNK (8) constant defined in prismatic.vla.constants! For best performance (in terms of both speed and success rate), we recommend executing the full action chunk.
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-15_09_36--openvla_oft--episode=13--success=False--task=put_the_bowl_on_the_plate.mp4
+04/24 [15:44:27] INFO     | >> Success: False             run_libero_eval.py:224
+                 INFO     | >> # episodes completed so    run_libero_eval.py:224
+                          far: 13                                               
+                 INFO     | >> # successes: 7 (53.8%)     run_libero_eval.py:224
+
+ 26%|██▌       | 13/50 [34:34<2:09:57, 210.73s/it][A                 INFO     | >>                            run_libero_eval.py:224
+                          Task: put the bowl on the plate                       
+                 INFO     | >> Starting episode 14...     run_libero_eval.py:224
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+WARNING: cfg.num_open_loop_steps (1) does not match the NUM_ACTIONS_CHUNK (8) constant defined in prismatic.vla.constants! For best performance (in terms of both speed and success rate), we recommend executing the full action chunk.
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-15_09_36--openvla_oft--episode=14--success=True--task=put_the_bowl_on_the_plate.mp4
+04/24 [15:45:34] INFO     | >> Success: True              run_libero_eval.py:224
+                 INFO     | >> # episodes completed so    run_libero_eval.py:224
+                          far: 14                                               
+                 INFO     | >> # successes: 8 (57.1%)     run_libero_eval.py:224
+
+ 28%|██▊       | 14/50 [35:40<1:40:18, 167.17s/it][A                 INFO     | >>                            run_libero_eval.py:224
+                          Task: put the bowl on the plate                       
+                 INFO     | >> Starting episode 15...     run_libero_eval.py:224
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+WARNING: cfg.num_open_loop_steps (1) does not match the NUM_ACTIONS_CHUNK (8) constant defined in prismatic.vla.constants! For best performance (in terms of both speed and success rate), we recommend executing the full action chunk.
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-15_09_36--openvla_oft--episode=15--success=True--task=put_the_bowl_on_the_plate.mp4
+04/24 [15:46:37] INFO     | >> Success: True              run_libero_eval.py:224
+                 INFO     | >> # episodes completed so    run_libero_eval.py:224
+                          far: 15                                               
+                 INFO     | >> # successes: 9 (60.0%)     run_libero_eval.py:224
+
+ 30%|███       | 15/50 [36:43<1:19:10, 135.73s/it][A                 INFO     | >>                            run_libero_eval.py:224
+                          Task: put the bowl on the plate                       
+                 INFO     | >> Starting episode 16...     run_libero_eval.py:224
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+WARNING: cfg.num_open_loop_steps (1) does not match the NUM_ACTIONS_CHUNK (8) constant defined in prismatic.vla.constants! For best performance (in terms of both speed and success rate), we recommend executing the full action chunk.
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-15_09_36--openvla_oft--episode=16--success=True--task=put_the_bowl_on_the_plate.mp4
+04/24 [15:47:30] INFO     | >> Success: True              run_libero_eval.py:224
+                 INFO     | >> # episodes completed so    run_libero_eval.py:224
+                          far: 16                                               
+                 INFO     | >> # successes: 10 (62.5%)    run_libero_eval.py:224
+
+ 32%|███▏      | 16/50 [37:36<1:02:49, 110.88s/it][A                 INFO     | >>                            run_libero_eval.py:224
+                          Task: put the bowl on the plate                       
+                 INFO     | >> Starting episode 17...     run_libero_eval.py:224
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+WARNING: cfg.num_open_loop_steps (1) does not match the NUM_ACTIONS_CHUNK (8) constant defined in prismatic.vla.constants! For best performance (in terms of both speed and success rate), we recommend executing the full action chunk.
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-15_09_36--openvla_oft--episode=17--success=False--task=put_the_bowl_on_the_plate.mp4
+04/24 [15:51:42] INFO     | >> Success: False             run_libero_eval.py:224
+                 INFO     | >> # episodes completed so    run_libero_eval.py:224
+                          far: 17                                               
+                 INFO     | >> # successes: 10 (58.8%)    run_libero_eval.py:224
+
+ 34%|███▍      | 17/50 [41:48<1:24:15, 153.21s/it][A                 INFO     | >>                            run_libero_eval.py:224
+                          Task: put the bowl on the plate                       
+                 INFO     | >> Starting episode 18...     run_libero_eval.py:224
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+WARNING: cfg.num_open_loop_steps (1) does not match the NUM_ACTIONS_CHUNK (8) constant defined in prismatic.vla.constants! For best performance (in terms of both speed and success rate), we recommend executing the full action chunk.
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-15_09_36--openvla_oft--episode=18--success=True--task=put_the_bowl_on_the_plate.mp4
+04/24 [15:53:50] INFO     | >> Success: True              run_libero_eval.py:224
+                 INFO     | >> # episodes completed so    run_libero_eval.py:224
+                          far: 18                                               
+                 INFO     | >> # successes: 11 (61.1%)    run_libero_eval.py:224
+
+ 36%|███▌      | 18/50 [43:56<1:17:42, 145.72s/it][A                 INFO     | >>                            run_libero_eval.py:224
+                          Task: put the bowl on the plate                       
+                 INFO     | >> Starting episode 19...     run_libero_eval.py:224
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+WARNING: cfg.num_open_loop_steps (1) does not match the NUM_ACTIONS_CHUNK (8) constant defined in prismatic.vla.constants! For best performance (in terms of both speed and success rate), we recommend executing the full action chunk.
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-15_09_36--openvla_oft--episode=19--success=True--task=put_the_bowl_on_the_plate.mp4
+04/24 [15:55:20] INFO     | >> Success: True              run_libero_eval.py:224
+                 INFO     | >> # episodes completed so    run_libero_eval.py:224
+                          far: 19                                               
+                 INFO     | >> # successes: 12 (63.2%)    run_libero_eval.py:224
+
+ 38%|███▊      | 19/50 [45:26<1:06:41, 129.07s/it][A                 INFO     | >>                            run_libero_eval.py:224
+                          Task: put the bowl on the plate                       
+                 INFO     | >> Starting episode 20...     run_libero_eval.py:224
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+WARNING: cfg.num_open_loop_steps (1) does not match the NUM_ACTIONS_CHUNK (8) constant defined in prismatic.vla.constants! For best performance (in terms of both speed and success rate), we recommend executing the full action chunk.
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-15_09_36--openvla_oft--episode=20--success=True--task=put_the_bowl_on_the_plate.mp4
+04/24 [15:56:31] INFO     | >> Success: True              run_libero_eval.py:224
+                 INFO     | >> # episodes completed so    run_libero_eval.py:224
+                          far: 20                                               
+                 INFO     | >> # successes: 13 (65.0%)    run_libero_eval.py:224
+
+ 40%|████      | 20/50 [46:37<55:44, 111.48s/it]  [A                 INFO     | >>                            run_libero_eval.py:224
+                          Task: put the bowl on the plate                       
+                 INFO     | >> Starting episode 21...     run_libero_eval.py:224
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+WARNING: cfg.num_open_loop_steps (1) does not match the NUM_ACTIONS_CHUNK (8) constant defined in prismatic.vla.constants! For best performance (in terms of both speed and success rate), we recommend executing the full action chunk.
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-15_09_36--openvla_oft--episode=21--success=True--task=put_the_bowl_on_the_plate.mp4
+04/24 [15:57:37] INFO     | >> Success: True              run_libero_eval.py:224
+                 INFO     | >> # episodes completed so    run_libero_eval.py:224
+                          far: 21                                               
+                 INFO     | >> # successes: 14 (66.7%)    run_libero_eval.py:224
+
+ 42%|████▏     | 21/50 [47:43<47:18, 97.89s/it] [A                 INFO     | >>                            run_libero_eval.py:224
+                          Task: put the bowl on the plate                       
+                 INFO     | >> Starting episode 22...     run_libero_eval.py:224
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+WARNING: cfg.num_open_loop_steps (1) does not match the NUM_ACTIONS_CHUNK (8) constant defined in prismatic.vla.constants! For best performance (in terms of both speed and success rate), we recommend executing the full action chunk.
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-15_09_36--openvla_oft--episode=22--success=False--task=put_the_bowl_on_the_plate.mp4
+04/24 [16:01:52] INFO     | >> Success: False             run_libero_eval.py:224
+                 INFO     | >> # episodes completed so    run_libero_eval.py:224
+                          far: 22                                               
+                 INFO     | >> # successes: 14 (63.6%)    run_libero_eval.py:224
+
+ 44%|████▍     | 22/50 [51:58<1:07:40, 145.01s/it][A                 INFO     | >>                            run_libero_eval.py:224
+                          Task: put the bowl on the plate                       
+                 INFO     | >> Starting episode 23...     run_libero_eval.py:224
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+WARNING: cfg.num_open_loop_steps (1) does not match the NUM_ACTIONS_CHUNK (8) constant defined in prismatic.vla.constants! For best performance (in terms of both speed and success rate), we recommend executing the full action chunk.
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-15_09_36--openvla_oft--episode=23--success=True--task=put_the_bowl_on_the_plate.mp4
+04/24 [16:03:03] INFO     | >> Success: True              run_libero_eval.py:224
+                 INFO     | >> # episodes completed so    run_libero_eval.py:224
+                          far: 23                                               
+                 INFO     | >> # successes: 15 (65.2%)    run_libero_eval.py:224
+
+ 46%|████▌     | 23/50 [53:09<55:16, 122.83s/it]  [A                 INFO     | >>                            run_libero_eval.py:224
+                          Task: put the bowl on the plate                       
+                 INFO     | >> Starting episode 24...     run_libero_eval.py:224
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+WARNING: cfg.num_open_loop_steps (1) does not match the NUM_ACTIONS_CHUNK (8) constant defined in prismatic.vla.constants! For best performance (in terms of both speed and success rate), we recommend executing the full action chunk.
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-15_09_36--openvla_oft--episode=24--success=False--task=put_the_bowl_on_the_plate.mp4
+04/24 [16:07:22] INFO     | >> Success: False             run_libero_eval.py:224
+                 INFO     | >> # episodes completed so    run_libero_eval.py:224
+                          far: 24                                               
+                 INFO     | >> # successes: 15 (62.5%)    run_libero_eval.py:224
+
+ 48%|████▊     | 24/50 [57:29<1:10:59, 163.83s/it][A                 INFO     | >>                            run_libero_eval.py:224
+                          Task: put the bowl on the plate                       
+                 INFO     | >> Starting episode 25...     run_libero_eval.py:224
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+WARNING: cfg.num_open_loop_steps (1) does not match the NUM_ACTIONS_CHUNK (8) constant defined in prismatic.vla.constants! For best performance (in terms of both speed and success rate), we recommend executing the full action chunk.
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-15_09_36--openvla_oft--episode=25--success=True--task=put_the_bowl_on_the_plate.mp4
+04/24 [16:08:41] INFO     | >> Success: True              run_libero_eval.py:224
+                 INFO     | >> # episodes completed so    run_libero_eval.py:224
+                          far: 25                                               
+                 INFO     | >> # successes: 16 (64.0%)    run_libero_eval.py:224
+
+ 50%|█████     | 25/50 [58:48<57:39, 138.39s/it]  [A                 INFO     | >>                            run_libero_eval.py:224
+                          Task: put the bowl on the plate                       
+                 INFO     | >> Starting episode 26...     run_libero_eval.py:224
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+WARNING: cfg.num_open_loop_steps (1) does not match the NUM_ACTIONS_CHUNK (8) constant defined in prismatic.vla.constants! For best performance (in terms of both speed and success rate), we recommend executing the full action chunk.
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-15_09_36--openvla_oft--episode=26--success=True--task=put_the_bowl_on_the_plate.mp4
+04/24 [16:09:58] INFO     | >> Success: True              run_libero_eval.py:224
+                 INFO     | >> # episodes completed so    run_libero_eval.py:224
+                          far: 26                                               
+                 INFO     | >> # successes: 17 (65.4%)    run_libero_eval.py:224
+
+ 52%|█████▏    | 26/50 [1:00:04<47:55, 119.79s/it][A                 INFO     | >>                            run_libero_eval.py:224
+                          Task: put the bowl on the plate                       
+                 INFO     | >> Starting episode 27...     run_libero_eval.py:224
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+WARNING: cfg.num_open_loop_steps (1) does not match the NUM_ACTIONS_CHUNK (8) constant defined in prismatic.vla.constants! For best performance (in terms of both speed and success rate), we recommend executing the full action chunk.
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-15_09_36--openvla_oft--episode=27--success=True--task=put_the_bowl_on_the_plate.mp4
+04/24 [16:11:06] INFO     | >> Success: True              run_libero_eval.py:224
+                 INFO     | >> # episodes completed so    run_libero_eval.py:224
+                          far: 27                                               
+                 INFO     | >> # successes: 18 (66.7%)    run_libero_eval.py:224
+
+ 54%|█████▍    | 27/50 [1:01:12<39:56, 104.20s/it][A                 INFO     | >>                            run_libero_eval.py:224
+                          Task: put the bowl on the plate                       
+                 INFO     | >> Starting episode 28...     run_libero_eval.py:224
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+WARNING: cfg.num_open_loop_steps (1) does not match the NUM_ACTIONS_CHUNK (8) constant defined in prismatic.vla.constants! For best performance (in terms of both speed and success rate), we recommend executing the full action chunk.
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-15_09_36--openvla_oft--episode=28--success=False--task=put_the_bowl_on_the_plate.mp4
+04/24 [16:15:17] INFO     | >> Success: False             run_libero_eval.py:224
+                 INFO     | >> # episodes completed so    run_libero_eval.py:224
+                          far: 28                                               
+                 INFO     | >> # successes: 18 (64.3%)    run_libero_eval.py:224
+
+ 56%|█████▌    | 28/50 [1:05:23<54:23, 148.33s/it][A                 INFO     | >>                            run_libero_eval.py:224
+                          Task: put the bowl on the plate                       
+                 INFO     | >> Starting episode 29...     run_libero_eval.py:224
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+WARNING: cfg.num_open_loop_steps (1) does not match the NUM_ACTIONS_CHUNK (8) constant defined in prismatic.vla.constants! For best performance (in terms of both speed and success rate), we recommend executing the full action chunk.
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-15_09_36--openvla_oft--episode=29--success=False--task=put_the_bowl_on_the_plate.mp4
+04/24 [16:19:35] INFO     | >> Success: False             run_libero_eval.py:224
+                 INFO     | >> # episodes completed so    run_libero_eval.py:224
+                          far: 29                                               
+                 INFO     | >> # successes: 18 (62.1%)    run_libero_eval.py:224
+
+ 58%|█████▊    | 29/50 [1:09:41<1:03:24, 181.18s/it][A                 INFO     | >>                            run_libero_eval.py:224
+                          Task: put the bowl on the plate                       
+                 INFO     | >> Starting episode 30...     run_libero_eval.py:224
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+WARNING: cfg.num_open_loop_steps (1) does not match the NUM_ACTIONS_CHUNK (8) constant defined in prismatic.vla.constants! For best performance (in terms of both speed and success rate), we recommend executing the full action chunk.
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-15_09_36--openvla_oft--episode=30--success=False--task=put_the_bowl_on_the_plate.mp4
+04/24 [16:23:47] INFO     | >> Success: False             run_libero_eval.py:224
+                 INFO     | >> # episodes completed so    run_libero_eval.py:224
+                          far: 30                                               
+                 INFO     | >> # successes: 18 (60.0%)    run_libero_eval.py:224
+
+ 60%|██████    | 30/50 [1:13:54<1:07:33, 202.66s/it][A                 INFO     | >>                            run_libero_eval.py:224
+                          Task: put the bowl on the plate                       
+                 INFO     | >> Starting episode 31...     run_libero_eval.py:224
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+WARNING: cfg.num_open_loop_steps (1) does not match the NUM_ACTIONS_CHUNK (8) constant defined in prismatic.vla.constants! For best performance (in terms of both speed and success rate), we recommend executing the full action chunk.
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-15_09_36--openvla_oft--episode=31--success=True--task=put_the_bowl_on_the_plate.mp4
+04/24 [16:24:53] INFO     | >> Success: True              run_libero_eval.py:224
+                 INFO     | >> # episodes completed so    run_libero_eval.py:224
+                          far: 31                                               
+                 INFO     | >> # successes: 19 (61.3%)    run_libero_eval.py:224
+
+ 62%|██████▏   | 31/50 [1:15:00<51:11, 161.63s/it]  [A                 INFO     | >>                            run_libero_eval.py:224
+                          Task: put the bowl on the plate                       
+                 INFO     | >> Starting episode 32...     run_libero_eval.py:224
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+WARNING: cfg.num_open_loop_steps (1) does not match the NUM_ACTIONS_CHUNK (8) constant defined in prismatic.vla.constants! For best performance (in terms of both speed and success rate), we recommend executing the full action chunk.
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-15_09_36--openvla_oft--episode=32--success=True--task=put_the_bowl_on_the_plate.mp4
+04/24 [16:25:58] INFO     | >> Success: True              run_libero_eval.py:224
+                 INFO     | >> # episodes completed so    run_libero_eval.py:224
+                          far: 32                                               
+                 INFO     | >> # successes: 20 (62.5%)    run_libero_eval.py:224
+
+ 64%|██████▍   | 32/50 [1:16:04<39:45, 132.53s/it][A                 INFO     | >>                            run_libero_eval.py:224
+                          Task: put the bowl on the plate                       
+                 INFO     | >> Starting episode 33...     run_libero_eval.py:224
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+WARNING: cfg.num_open_loop_steps (1) does not match the NUM_ACTIONS_CHUNK (8) constant defined in prismatic.vla.constants! For best performance (in terms of both speed and success rate), we recommend executing the full action chunk.
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-15_09_36--openvla_oft--episode=33--success=False--task=put_the_bowl_on_the_plate.mp4
+04/24 [16:30:05] INFO     | >> Success: False             run_libero_eval.py:224
+                 INFO     | >> # episodes completed so    run_libero_eval.py:224
+                          far: 33                                               
+                 INFO     | >> # successes: 20 (60.6%)    run_libero_eval.py:224
+
+ 66%|██████▌   | 33/50 [1:20:12<47:18, 167.00s/it][A                 INFO     | >>                            run_libero_eval.py:224
+                          Task: put the bowl on the plate                       
+                 INFO     | >> Starting episode 34...     run_libero_eval.py:224
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+WARNING: cfg.num_open_loop_steps (1) does not match the NUM_ACTIONS_CHUNK (8) constant defined in prismatic.vla.constants! For best performance (in terms of both speed and success rate), we recommend executing the full action chunk.
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-15_09_36--openvla_oft--episode=34--success=False--task=put_the_bowl_on_the_plate.mp4
+04/24 [16:34:22] INFO     | >> Success: False             run_libero_eval.py:224
+                 INFO     | >> # episodes completed so    run_libero_eval.py:224
+                          far: 34                                               
+                 INFO     | >> # successes: 20 (58.8%)    run_libero_eval.py:224
+
+ 68%|██████▊   | 34/50 [1:24:28<51:40, 193.77s/it][A                 INFO     | >>                            run_libero_eval.py:224
+                          Task: put the bowl on the plate                       
+                 INFO     | >> Starting episode 35...     run_libero_eval.py:224
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+WARNING: cfg.num_open_loop_steps (1) does not match the NUM_ACTIONS_CHUNK (8) constant defined in prismatic.vla.constants! For best performance (in terms of both speed and success rate), we recommend executing the full action chunk.
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-15_09_36--openvla_oft--episode=35--success=True--task=put_the_bowl_on_the_plate.mp4
+04/24 [16:35:35] INFO     | >> Success: True              run_libero_eval.py:224
+                 INFO     | >> # episodes completed so    run_libero_eval.py:224
+                          far: 35                                               
+                 INFO     | >> # successes: 21 (60.0%)    run_libero_eval.py:224
+
+ 70%|███████   | 35/50 [1:25:41<39:24, 157.64s/it][A                 INFO     | >>                            run_libero_eval.py:224
+                          Task: put the bowl on the plate                       
+                 INFO     | >> Starting episode 36...     run_libero_eval.py:224
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+WARNING: cfg.num_open_loop_steps (1) does not match the NUM_ACTIONS_CHUNK (8) constant defined in prismatic.vla.constants! For best performance (in terms of both speed and success rate), we recommend executing the full action chunk.
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-15_09_36--openvla_oft--episode=36--success=False--task=put_the_bowl_on_the_plate.mp4
+04/24 [16:39:45] INFO     | >> Success: False             run_libero_eval.py:224
+                 INFO     | >> # episodes completed so    run_libero_eval.py:224
+                          far: 36                                               
+                 INFO     | >> # successes: 21 (58.3%)    run_libero_eval.py:224
+
+ 72%|███████▏  | 36/50 [1:29:51<43:13, 185.26s/it][A                 INFO     | >>                            run_libero_eval.py:224
+                          Task: put the bowl on the plate                       
+                 INFO     | >> Starting episode 37...     run_libero_eval.py:224
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+WARNING: cfg.num_open_loop_steps (1) does not match the NUM_ACTIONS_CHUNK (8) constant defined in prismatic.vla.constants! For best performance (in terms of both speed and success rate), we recommend executing the full action chunk.
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-15_09_36--openvla_oft--episode=37--success=True--task=put_the_bowl_on_the_plate.mp4
+04/24 [16:40:47] INFO     | >> Success: True              run_libero_eval.py:224
+                 INFO     | >> # episodes completed so    run_libero_eval.py:224
+                          far: 37                                               
+                 INFO     | >> # successes: 22 (59.5%)    run_libero_eval.py:224
+
+ 74%|███████▍  | 37/50 [1:30:53<32:08, 148.34s/it][A                 INFO     | >>                            run_libero_eval.py:224
+                          Task: put the bowl on the plate                       
+                 INFO     | >> Starting episode 38...     run_libero_eval.py:224
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+WARNING: cfg.num_open_loop_steps (1) does not match the NUM_ACTIONS_CHUNK (8) constant defined in prismatic.vla.constants! For best performance (in terms of both speed and success rate), we recommend executing the full action chunk.
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-15_09_36--openvla_oft--episode=38--success=True--task=put_the_bowl_on_the_plate.mp4
+04/24 [16:41:59] INFO     | >> Success: True              run_libero_eval.py:224
+                 INFO     | >> # episodes completed so    run_libero_eval.py:224
+                          far: 38                                               
+                 INFO     | >> # successes: 23 (60.5%)    run_libero_eval.py:224
+
+ 76%|███████▌  | 38/50 [1:32:05<25:05, 125.45s/it][A                 INFO     | >>                            run_libero_eval.py:224
+                          Task: put the bowl on the plate                       
+                 INFO     | >> Starting episode 39...     run_libero_eval.py:224
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+WARNING: cfg.num_open_loop_steps (1) does not match the NUM_ACTIONS_CHUNK (8) constant defined in prismatic.vla.constants! For best performance (in terms of both speed and success rate), we recommend executing the full action chunk.
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-15_09_36--openvla_oft--episode=39--success=True--task=put_the_bowl_on_the_plate.mp4
+04/24 [16:44:49] INFO     | >> Success: True              run_libero_eval.py:224
+                 INFO     | >> # episodes completed so    run_libero_eval.py:224
+                          far: 39                                               
+                 INFO     | >> # successes: 24 (61.5%)    run_libero_eval.py:224
+
+ 78%|███████▊  | 39/50 [1:34:55<25:27, 138.85s/it][A                 INFO     | >>                            run_libero_eval.py:224
+                          Task: put the bowl on the plate                       
+                 INFO     | >> Starting episode 40...     run_libero_eval.py:224
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+WARNING: cfg.num_open_loop_steps (1) does not match the NUM_ACTIONS_CHUNK (8) constant defined in prismatic.vla.constants! For best performance (in terms of both speed and success rate), we recommend executing the full action chunk.
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-15_09_36--openvla_oft--episode=40--success=False--task=put_the_bowl_on_the_plate.mp4
+04/24 [16:49:00] INFO     | >> Success: False             run_libero_eval.py:224
+                 INFO     | >> # episodes completed so    run_libero_eval.py:224
+                          far: 40                                               
+                 INFO     | >> # successes: 24 (60.0%)    run_libero_eval.py:224
+
+ 80%|████████  | 40/50 [1:39:06<28:44, 172.48s/it][A                 INFO     | >>                            run_libero_eval.py:224
+                          Task: put the bowl on the plate                       
+                 INFO     | >> Starting episode 41...     run_libero_eval.py:224
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+WARNING: cfg.num_open_loop_steps (1) does not match the NUM_ACTIONS_CHUNK (8) constant defined in prismatic.vla.constants! For best performance (in terms of both speed and success rate), we recommend executing the full action chunk.
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-15_09_36--openvla_oft--episode=41--success=False--task=put_the_bowl_on_the_plate.mp4
+04/24 [16:53:08] INFO     | >> Success: False             run_libero_eval.py:224
+                 INFO     | >> # episodes completed so    run_libero_eval.py:224
+                          far: 41                                               
+                 INFO     | >> # successes: 24 (58.5%)    run_libero_eval.py:224
+
+ 82%|████████▏ | 41/50 [1:43:14<29:15, 195.03s/it][A                 INFO     | >>                            run_libero_eval.py:224
+                          Task: put the bowl on the plate                       
+                 INFO     | >> Starting episode 42...     run_libero_eval.py:224
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+WARNING: cfg.num_open_loop_steps (1) does not match the NUM_ACTIONS_CHUNK (8) constant defined in prismatic.vla.constants! For best performance (in terms of both speed and success rate), we recommend executing the full action chunk.
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-15_09_36--openvla_oft--episode=42--success=True--task=put_the_bowl_on_the_plate.mp4
+04/24 [16:54:26] INFO     | >> Success: True              run_libero_eval.py:224
+                 INFO     | >> # episodes completed so    run_libero_eval.py:224
+                          far: 42                                               
+                 INFO     | >> # successes: 25 (59.5%)    run_libero_eval.py:224
+
+ 84%|████████▍ | 42/50 [1:44:32<21:20, 160.08s/it][A                 INFO     | >>                            run_libero_eval.py:224
+                          Task: put the bowl on the plate                       
+                 INFO     | >> Starting episode 43...     run_libero_eval.py:224
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+WARNING: cfg.num_open_loop_steps (1) does not match the NUM_ACTIONS_CHUNK (8) constant defined in prismatic.vla.constants! For best performance (in terms of both speed and success rate), we recommend executing the full action chunk.
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-15_09_36--openvla_oft--episode=43--success=False--task=put_the_bowl_on_the_plate.mp4
+04/24 [16:58:40] INFO     | >> Success: False             run_libero_eval.py:224
+                 INFO     | >> # episodes completed so    run_libero_eval.py:224
+                          far: 43                                               
+                 INFO     | >> # successes: 25 (58.1%)    run_libero_eval.py:224
+
+ 86%|████████▌ | 43/50 [1:48:46<21:56, 188.12s/it][A                 INFO     | >>                            run_libero_eval.py:224
+                          Task: put the bowl on the plate                       
+                 INFO     | >> Starting episode 44...     run_libero_eval.py:224
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+WARNING: cfg.num_open_loop_steps (1) does not match the NUM_ACTIONS_CHUNK (8) constant defined in prismatic.vla.constants! For best performance (in terms of both speed and success rate), we recommend executing the full action chunk.
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-15_09_36--openvla_oft--episode=44--success=False--task=put_the_bowl_on_the_plate.mp4
+04/24 [17:02:59] INFO     | >> Success: False             run_libero_eval.py:224
+                 INFO     | >> # episodes completed so    run_libero_eval.py:224
+                          far: 44                                               
+                 INFO     | >> # successes: 25 (56.8%)    run_libero_eval.py:224
+
+ 88%|████████▊ | 44/50 [1:53:05<20:56, 209.38s/it][A                 INFO     | >>                            run_libero_eval.py:224
+                          Task: put the bowl on the plate                       
+                 INFO     | >> Starting episode 45...     run_libero_eval.py:224
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+WARNING: cfg.num_open_loop_steps (1) does not match the NUM_ACTIONS_CHUNK (8) constant defined in prismatic.vla.constants! For best performance (in terms of both speed and success rate), we recommend executing the full action chunk.
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-15_09_36--openvla_oft--episode=45--success=True--task=put_the_bowl_on_the_plate.mp4
+04/24 [17:04:04] INFO     | >> Success: True              run_libero_eval.py:224
+                 INFO     | >> # episodes completed so    run_libero_eval.py:224
+                          far: 45                                               
+                 INFO     | >> # successes: 26 (57.8%)    run_libero_eval.py:224
+
+ 90%|█████████ | 45/50 [1:54:10<13:50, 166.18s/it][A                 INFO     | >>                            run_libero_eval.py:224
+                          Task: put the bowl on the plate                       
+                 INFO     | >> Starting episode 46...     run_libero_eval.py:224
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+WARNING: cfg.num_open_loop_steps (1) does not match the NUM_ACTIONS_CHUNK (8) constant defined in prismatic.vla.constants! For best performance (in terms of both speed and success rate), we recommend executing the full action chunk.
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-15_09_36--openvla_oft--episode=46--success=False--task=put_the_bowl_on_the_plate.mp4
+04/24 [17:08:18] INFO     | >> Success: False             run_libero_eval.py:224
+                 INFO     | >> # episodes completed so    run_libero_eval.py:224
+                          far: 46                                               
+                 INFO     | >> # successes: 26 (56.5%)    run_libero_eval.py:224
+
+ 92%|█████████▏| 46/50 [1:58:25<12:50, 192.58s/it][A                 INFO     | >>                            run_libero_eval.py:224
+                          Task: put the bowl on the plate                       
+                 INFO     | >> Starting episode 47...     run_libero_eval.py:224
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+WARNING: cfg.num_open_loop_steps (1) does not match the NUM_ACTIONS_CHUNK (8) constant defined in prismatic.vla.constants! For best performance (in terms of both speed and success rate), we recommend executing the full action chunk.
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-15_09_36--openvla_oft--episode=47--success=False--task=put_the_bowl_on_the_plate.mp4
+04/24 [17:12:30] INFO     | >> Success: False             run_libero_eval.py:224
+                 INFO     | >> # episodes completed so    run_libero_eval.py:224
+                          far: 47                                               
+                 INFO     | >> # successes: 26 (55.3%)    run_libero_eval.py:224
+
+ 94%|█████████▍| 47/50 [2:02:36<10:30, 210.20s/it][A                 INFO     | >>                            run_libero_eval.py:224
+                          Task: put the bowl on the plate                       
+                 INFO     | >> Starting episode 48...     run_libero_eval.py:224
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+WARNING: cfg.num_open_loop_steps (1) does not match the NUM_ACTIONS_CHUNK (8) constant defined in prismatic.vla.constants! For best performance (in terms of both speed and success rate), we recommend executing the full action chunk.
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-15_09_36--openvla_oft--episode=48--success=True--task=put_the_bowl_on_the_plate.mp4
+04/24 [17:13:59] INFO     | >> Success: True              run_libero_eval.py:224
+                 INFO     | >> # episodes completed so    run_libero_eval.py:224
+                          far: 48                                               
+                 INFO     | >> # successes: 27 (56.2%)    run_libero_eval.py:224
+
+ 96%|█████████▌| 48/50 [2:04:06<05:48, 174.09s/it][A                 INFO     | >>                            run_libero_eval.py:224
+                          Task: put the bowl on the plate                       
+                 INFO     | >> Starting episode 49...     run_libero_eval.py:224
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+WARNING: cfg.num_open_loop_steps (1) does not match the NUM_ACTIONS_CHUNK (8) constant defined in prismatic.vla.constants! For best performance (in terms of both speed and success rate), we recommend executing the full action chunk.
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-15_09_36--openvla_oft--episode=49--success=False--task=put_the_bowl_on_the_plate.mp4
+04/24 [17:18:13] INFO     | >> Success: False             run_libero_eval.py:224
+                 INFO     | >> # episodes completed so    run_libero_eval.py:224
+                          far: 49                                               
+                 INFO     | >> # successes: 27 (55.1%)    run_libero_eval.py:224
+
+ 98%|█████████▊| 49/50 [2:08:19<03:17, 197.88s/it][A                 INFO     | >>                            run_libero_eval.py:224
+                          Task: put the bowl on the plate                       
+                 INFO     | >> Starting episode 50...     run_libero_eval.py:224
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+WARNING: cfg.num_open_loop_steps (1) does not match the NUM_ACTIONS_CHUNK (8) constant defined in prismatic.vla.constants! For best performance (in terms of both speed and success rate), we recommend executing the full action chunk.
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-15_09_36--openvla_oft--episode=50--success=False--task=put_the_bowl_on_the_plate.mp4
+04/24 [17:22:16] INFO     | >> Success: False             run_libero_eval.py:224
+                 INFO     | >> # episodes completed so    run_libero_eval.py:224
+                          far: 50                                               
+                 INFO     | >> # successes: 27 (54.0%)    run_libero_eval.py:224
+
+100%|██████████| 50/50 [2:12:22<00:00, 211.40s/it][A100%|██████████| 50/50 [2:12:22<00:00, 158.85s/it]
+                 INFO     | >> Current task success rate: run_libero_eval.py:224
+                          0.54                                                  
+                 INFO     | >> Current total success      run_libero_eval.py:224
+                          rate: 0.54                                            
+ 50%|█████     | 1/2 [2:12:24<2:12:24, 7944.78s/it][Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+                 INFO     | >> Using default initial      run_libero_eval.py:224
+                          states                                                
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+
+  0%|          | 0/50 [00:00<?, ?it/s][A04/24 [17:22:17] INFO     | >>                            run_libero_eval.py:224
+                          Task: put the wine bottle on                          
+                          the rack                                              
+                 INFO     | >> Starting episode 1...      run_libero_eval.py:224
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+WARNING: cfg.num_open_loop_steps (1) does not match the NUM_ACTIONS_CHUNK (8) constant defined in prismatic.vla.constants! For best performance (in terms of both speed and success rate), we recommend executing the full action chunk.
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-15_09_36--openvla_oft--episode=51--success=False--task=put_the_wine_bottle_on_the_rack.mp4
+04/24 [17:26:21] INFO     | >> Success: False             run_libero_eval.py:224
+                 INFO     | >> # episodes completed so    run_libero_eval.py:224
+                          far: 51                                               
+                 INFO     | >> # successes: 27 (52.9%)    run_libero_eval.py:224
+
+  2%|▏         | 1/50 [04:04<3:19:27, 244.24s/it][A                 INFO     | >>                            run_libero_eval.py:224
+                          Task: put the wine bottle on                          
+                          the rack                                              
+                 INFO     | >> Starting episode 2...      run_libero_eval.py:224
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+WARNING: cfg.num_open_loop_steps (1) does not match the NUM_ACTIONS_CHUNK (8) constant defined in prismatic.vla.constants! For best performance (in terms of both speed and success rate), we recommend executing the full action chunk.
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-15_09_36--openvla_oft--episode=52--success=False--task=put_the_wine_bottle_on_the_rack.mp4
+04/24 [17:30:37] INFO     | >> Success: False             run_libero_eval.py:224
+                 INFO     | >> # episodes completed so    run_libero_eval.py:224
+                          far: 52                                               
+                 INFO     | >> # successes: 27 (51.9%)    run_libero_eval.py:224
+
+  4%|▍         | 2/50 [08:19<3:20:42, 250.88s/it][A                 INFO     | >>                            run_libero_eval.py:224
+                          Task: put the wine bottle on                          
+                          the rack                                              
+                 INFO     | >> Starting episode 3...      run_libero_eval.py:224
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+WARNING: cfg.num_open_loop_steps (1) does not match the NUM_ACTIONS_CHUNK (8) constant defined in prismatic.vla.constants! For best performance (in terms of both speed and success rate), we recommend executing the full action chunk.
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-15_09_36--openvla_oft--episode=53--success=True--task=put_the_wine_bottle_on_the_rack.mp4
+04/24 [17:32:56] INFO     | >> Success: True              run_libero_eval.py:224
+                 INFO     | >> # episodes completed so    run_libero_eval.py:224
+                          far: 53                                               
+                 INFO     | >> # successes: 28 (52.8%)    run_libero_eval.py:224
+
+  6%|▌         | 3/50 [10:38<2:36:33, 199.86s/it][A                 INFO     | >>                            run_libero_eval.py:224
+                          Task: put the wine bottle on                          
+                          the rack                                              
+                 INFO     | >> Starting episode 4...      run_libero_eval.py:224
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+WARNING: cfg.num_open_loop_steps (1) does not match the NUM_ACTIONS_CHUNK (8) constant defined in prismatic.vla.constants! For best performance (in terms of both speed and success rate), we recommend executing the full action chunk.
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-15_09_36--openvla_oft--episode=54--success=True--task=put_the_wine_bottle_on_the_rack.mp4
+04/24 [17:35:54] INFO     | >> Success: True              run_libero_eval.py:224
+                 INFO     | >> # episodes completed so    run_libero_eval.py:224
+                          far: 54                                               
+                 INFO     | >> # successes: 29 (53.7%)    run_libero_eval.py:224
+
+  8%|▊         | 4/50 [13:37<2:26:48, 191.48s/it][A                 INFO     | >>                            run_libero_eval.py:224
+                          Task: put the wine bottle on                          
+                          the rack                                              
+                 INFO     | >> Starting episode 5...      run_libero_eval.py:224
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+WARNING: cfg.num_open_loop_steps (1) does not match the NUM_ACTIONS_CHUNK (8) constant defined in prismatic.vla.constants! For best performance (in terms of both speed and success rate), we recommend executing the full action chunk.
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-15_09_36--openvla_oft--episode=55--success=False--task=put_the_wine_bottle_on_the_rack.mp4
+04/24 [17:40:07] INFO     | >> Success: False             run_libero_eval.py:224
+                 INFO     | >> # episodes completed so    run_libero_eval.py:224
+                          far: 55                                               
+                 INFO     | >> # successes: 29 (52.7%)    run_libero_eval.py:224
+
+ 10%|█         | 5/50 [17:49<2:40:04, 213.44s/it][A                 INFO     | >>                            run_libero_eval.py:224
+                          Task: put the wine bottle on                          
+                          the rack                                              
+                 INFO     | >> Starting episode 6...      run_libero_eval.py:224
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+WARNING: cfg.num_open_loop_steps (1) does not match the NUM_ACTIONS_CHUNK (8) constant defined in prismatic.vla.constants! For best performance (in terms of both speed and success rate), we recommend executing the full action chunk.
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-15_09_36--openvla_oft--episode=56--success=False--task=put_the_wine_bottle_on_the_rack.mp4
+04/24 [17:44:11] INFO     | >> Success: False             run_libero_eval.py:224
+                 INFO     | >> # episodes completed so    run_libero_eval.py:224
+                          far: 56                                               
+                 INFO     | >> # successes: 29 (51.8%)    run_libero_eval.py:224
+
+ 12%|█▏        | 6/50 [21:54<2:44:11, 223.89s/it][A                 INFO     | >>                            run_libero_eval.py:224
+                          Task: put the wine bottle on                          
+                          the rack                                              
+                 INFO     | >> Starting episode 7...      run_libero_eval.py:224
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+WARNING: cfg.num_open_loop_steps (1) does not match the NUM_ACTIONS_CHUNK (8) constant defined in prismatic.vla.constants! For best performance (in terms of both speed and success rate), we recommend executing the full action chunk.
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-15_09_36--openvla_oft--episode=57--success=False--task=put_the_wine_bottle_on_the_rack.mp4
+04/24 [17:48:15] INFO     | >> Success: False             run_libero_eval.py:224
+                 INFO     | >> # episodes completed so    run_libero_eval.py:224
+                          far: 57                                               
+                 INFO     | >> # successes: 29 (50.9%)    run_libero_eval.py:224
+
+ 14%|█▍        | 7/50 [25:58<2:45:14, 230.57s/it][A                 INFO     | >>                            run_libero_eval.py:224
+                          Task: put the wine bottle on                          
+                          the rack                                              
+                 INFO     | >> Starting episode 8...      run_libero_eval.py:224
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+WARNING: cfg.num_open_loop_steps (1) does not match the NUM_ACTIONS_CHUNK (8) constant defined in prismatic.vla.constants! For best performance (in terms of both speed and success rate), we recommend executing the full action chunk.
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-15_09_36--openvla_oft--episode=58--success=False--task=put_the_wine_bottle_on_the_rack.mp4
+04/24 [17:52:38] INFO     | >> Success: False             run_libero_eval.py:224
+                 INFO     | >> # episodes completed so    run_libero_eval.py:224
+                          far: 58                                               
+                 INFO     | >> # successes: 29 (50.0%)    run_libero_eval.py:224
+
+ 16%|█▌        | 8/50 [30:21<2:48:37, 240.89s/it][A                 INFO     | >>                            run_libero_eval.py:224
+                          Task: put the wine bottle on                          
+                          the rack                                              
+                 INFO     | >> Starting episode 9...      run_libero_eval.py:224
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+WARNING: cfg.num_open_loop_steps (1) does not match the NUM_ACTIONS_CHUNK (8) constant defined in prismatic.vla.constants! For best performance (in terms of both speed and success rate), we recommend executing the full action chunk.
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-15_09_36--openvla_oft--episode=59--success=False--task=put_the_wine_bottle_on_the_rack.mp4
+04/24 [17:56:54] INFO     | >> Success: False             run_libero_eval.py:224
+                 INFO     | >> # episodes completed so    run_libero_eval.py:224
+                          far: 59                                               
+                 INFO     | >> # successes: 29 (49.2%)    run_libero_eval.py:224
+
+ 18%|█▊        | 9/50 [34:37<2:47:46, 245.53s/it][A                 INFO     | >>                            run_libero_eval.py:224
+                          Task: put the wine bottle on                          
+                          the rack                                              
+                 INFO     | >> Starting episode 10...     run_libero_eval.py:224
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+WARNING: cfg.num_open_loop_steps (1) does not match the NUM_ACTIONS_CHUNK (8) constant defined in prismatic.vla.constants! For best performance (in terms of both speed and success rate), we recommend executing the full action chunk.
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-15_09_36--openvla_oft--episode=60--success=False--task=put_the_wine_bottle_on_the_rack.mp4
+04/24 [18:01:12] INFO     | >> Success: False             run_libero_eval.py:224
+                 INFO     | >> # episodes completed so    run_libero_eval.py:224
+                          far: 60                                               
+                 INFO     | >> # successes: 29 (48.3%)    run_libero_eval.py:224
+
+ 20%|██        | 10/50 [38:54<2:46:11, 249.28s/it][A                 INFO     | >>                            run_libero_eval.py:224
+                          Task: put the wine bottle on                          
+                          the rack                                              
+                 INFO     | >> Starting episode 11...     run_libero_eval.py:224
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+WARNING: cfg.num_open_loop_steps (1) does not match the NUM_ACTIONS_CHUNK (8) constant defined in prismatic.vla.constants! For best performance (in terms of both speed and success rate), we recommend executing the full action chunk.
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-15_09_36--openvla_oft--episode=61--success=True--task=put_the_wine_bottle_on_the_rack.mp4
+04/24 [18:03:19] INFO     | >> Success: True              run_libero_eval.py:224
+                 INFO     | >> # episodes completed so    run_libero_eval.py:224
+                          far: 61                                               
+                 INFO     | >> # successes: 30 (49.2%)    run_libero_eval.py:224
+
+ 22%|██▏       | 11/50 [41:02<2:17:44, 211.92s/it][A                 INFO     | >>                            run_libero_eval.py:224
+                          Task: put the wine bottle on                          
+                          the rack                                              
+                 INFO     | >> Starting episode 12...     run_libero_eval.py:224
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+WARNING: cfg.num_open_loop_steps (1) does not match the NUM_ACTIONS_CHUNK (8) constant defined in prismatic.vla.constants! For best performance (in terms of both speed and success rate), we recommend executing the full action chunk.
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-15_09_36--openvla_oft--episode=62--success=False--task=put_the_wine_bottle_on_the_rack.mp4
+04/24 [18:07:34] INFO     | >> Success: False             run_libero_eval.py:224
+                 INFO     | >> # episodes completed so    run_libero_eval.py:224
+                          far: 62                                               
+                 INFO     | >> # successes: 30 (48.4%)    run_libero_eval.py:224
+
+ 24%|██▍       | 12/50 [45:17<2:22:31, 225.04s/it][A                 INFO     | >>                            run_libero_eval.py:224
+                          Task: put the wine bottle on                          
+                          the rack                                              
+                 INFO     | >> Starting episode 13...     run_libero_eval.py:224
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+WARNING: cfg.num_open_loop_steps (1) does not match the NUM_ACTIONS_CHUNK (8) constant defined in prismatic.vla.constants! For best performance (in terms of both speed and success rate), we recommend executing the full action chunk.
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-15_09_36--openvla_oft--episode=63--success=False--task=put_the_wine_bottle_on_the_rack.mp4
+04/24 [18:11:40] INFO     | >> Success: False             run_libero_eval.py:224
+                 INFO     | >> # episodes completed so    run_libero_eval.py:224
+                          far: 63                                               
+                 INFO     | >> # successes: 30 (47.6%)    run_libero_eval.py:224
+
+ 26%|██▌       | 13/50 [49:22<2:22:38, 231.31s/it][A                 INFO     | >>                            run_libero_eval.py:224
+                          Task: put the wine bottle on                          
+                          the rack                                              
+                 INFO     | >> Starting episode 14...     run_libero_eval.py:224
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+WARNING: cfg.num_open_loop_steps (1) does not match the NUM_ACTIONS_CHUNK (8) constant defined in prismatic.vla.constants! For best performance (in terms of both speed and success rate), we recommend executing the full action chunk.
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-15_09_36--openvla_oft--episode=64--success=False--task=put_the_wine_bottle_on_the_rack.mp4
+04/24 [18:15:43] INFO     | >> Success: False             run_libero_eval.py:224
+                 INFO     | >> # episodes completed so    run_libero_eval.py:224
+                          far: 64                                               
+                 INFO     | >> # successes: 30 (46.9%)    run_libero_eval.py:224
+
+ 28%|██▊       | 14/50 [53:25<2:20:55, 234.87s/it][A                 INFO     | >>                            run_libero_eval.py:224
+                          Task: put the wine bottle on                          
+                          the rack                                              
+                 INFO     | >> Starting episode 15...     run_libero_eval.py:224
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+WARNING: cfg.num_open_loop_steps (1) does not match the NUM_ACTIONS_CHUNK (8) constant defined in prismatic.vla.constants! For best performance (in terms of both speed and success rate), we recommend executing the full action chunk.
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-15_09_36--openvla_oft--episode=65--success=False--task=put_the_wine_bottle_on_the_rack.mp4
+04/24 [18:20:05] INFO     | >> Success: False             run_libero_eval.py:224
+                 INFO     | >> # episodes completed so    run_libero_eval.py:224
+                          far: 65                                               
+                 INFO     | >> # successes: 30 (46.2%)    run_libero_eval.py:224
+
+ 30%|███       | 15/50 [57:47<2:21:47, 243.07s/it][A                 INFO     | >>                            run_libero_eval.py:224
+                          Task: put the wine bottle on                          
+                          the rack                                              
+                 INFO     | >> Starting episode 16...     run_libero_eval.py:224
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+WARNING: cfg.num_open_loop_steps (1) does not match the NUM_ACTIONS_CHUNK (8) constant defined in prismatic.vla.constants! For best performance (in terms of both speed and success rate), we recommend executing the full action chunk.
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-15_09_36--openvla_oft--episode=66--success=False--task=put_the_wine_bottle_on_the_rack.mp4
+04/24 [18:24:23] INFO     | >> Success: False             run_libero_eval.py:224
+                 INFO     | >> # episodes completed so    run_libero_eval.py:224
+                          far: 66                                               
+                 INFO     | >> # successes: 30 (45.5%)    run_libero_eval.py:224
+
+ 32%|███▏      | 16/50 [1:02:05<2:20:16, 247.53s/it][A                 INFO     | >>                            run_libero_eval.py:224
+                          Task: put the wine bottle on                          
+                          the rack                                              
+                 INFO     | >> Starting episode 17...     run_libero_eval.py:224
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+WARNING: cfg.num_open_loop_steps (1) does not match the NUM_ACTIONS_CHUNK (8) constant defined in prismatic.vla.constants! For best performance (in terms of both speed and success rate), we recommend executing the full action chunk.
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-15_09_36--openvla_oft--episode=67--success=False--task=put_the_wine_bottle_on_the_rack.mp4
+04/24 [18:28:33] INFO     | >> Success: False             run_libero_eval.py:224
+                 INFO     | >> # episodes completed so    run_libero_eval.py:224
+                          far: 67                                               
+                 INFO     | >> # successes: 30 (44.8%)    run_libero_eval.py:224
+
+ 34%|███▍      | 17/50 [1:06:16<2:16:37, 248.42s/it][A                 INFO     | >>                            run_libero_eval.py:224
+                          Task: put the wine bottle on                          
+                          the rack                                              
+                 INFO     | >> Starting episode 18...     run_libero_eval.py:224
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+WARNING: cfg.num_open_loop_steps (1) does not match the NUM_ACTIONS_CHUNK (8) constant defined in prismatic.vla.constants! For best performance (in terms of both speed and success rate), we recommend executing the full action chunk.
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-15_09_36--openvla_oft--episode=68--success=False--task=put_the_wine_bottle_on_the_rack.mp4
+04/24 [18:32:49] INFO     | >> Success: False             run_libero_eval.py:224
+                 INFO     | >> # episodes completed so    run_libero_eval.py:224
+                          far: 68                                               
+                 INFO     | >> # successes: 30 (44.1%)    run_libero_eval.py:224
+
+ 36%|███▌      | 18/50 [1:10:32<2:13:39, 250.62s/it][A                 INFO     | >>                            run_libero_eval.py:224
+                          Task: put the wine bottle on                          
+                          the rack                                              
+                 INFO     | >> Starting episode 19...     run_libero_eval.py:224
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+WARNING: cfg.num_open_loop_steps (1) does not match the NUM_ACTIONS_CHUNK (8) constant defined in prismatic.vla.constants! For best performance (in terms of both speed and success rate), we recommend executing the full action chunk.
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-15_09_36--openvla_oft--episode=69--success=False--task=put_the_wine_bottle_on_the_rack.mp4
+04/24 [18:37:14] INFO     | >> Success: False             run_libero_eval.py:224
+                 INFO     | >> # episodes completed so    run_libero_eval.py:224
+                          far: 69                                               
+                 INFO     | >> # successes: 30 (43.5%)    run_libero_eval.py:224
+
+ 38%|███▊      | 19/50 [1:14:56<2:11:38, 254.80s/it][A                 INFO     | >>                            run_libero_eval.py:224
+                          Task: put the wine bottle on                          
+                          the rack                                              
+                 INFO     | >> Starting episode 20...     run_libero_eval.py:224

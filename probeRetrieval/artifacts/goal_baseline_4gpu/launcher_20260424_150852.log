@@ -1,0 +1,6 @@
+nohup: ignoring input
+Launched 4 workers in background.
+Run directory: /network/rit/lab/wang_lab_cs/yhan/CausalRetrieval/probeRetrieval/artifacts/goal_baseline_4gpu/20260424_150852
+PIDs saved to: /network/rit/lab/wang_lab_cs/yhan/CausalRetrieval/probeRetrieval/artifacts/goal_baseline_4gpu/20260424_150852/pids.txt
+Tail logs with:
+  tail -f /network/rit/lab/wang_lab_cs/yhan/CausalRetrieval/probeRetrieval/artifacts/goal_baseline_4gpu/20260424_150852/gpu0.log /network/rit/lab/wang_lab_cs/yhan/CausalRetrieval/probeRetrieval/artifacts/goal_baseline_4gpu/20260424_150852/gpu1.log /network/rit/lab/wang_lab_cs/yhan/CausalRetrieval/probeRetrieval/artifacts/goal_baseline_4gpu/20260424_150852/gpu2.log /network/rit/lab/wang_lab_cs/yhan/CausalRetrieval/probeRetrieval/artifacts/goal_baseline_4gpu/20260424_150852/gpu3.log

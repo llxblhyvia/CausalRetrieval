@@ -1,0 +1,17 @@
+seed: 0
+task_suite_name: libero_goal
+checkpoint: openvla/openvla-7b-finetuned-libero-goal
+center_crop: true
+num_trials_per_task: 50
+num_images_in_input: 1
+use_proprio: false
+use_l1_regression: false
+num_open_loop_steps: 1
+
+paths:
+  output_dir: artifacts/goal_baseline
+  log_dir: artifacts/logs/goal_baseline
+  hf_home: /network/rit/lab/wang_lab_cs/yhan/hf_cache
+  env_root: /network/rit/lab/wang_lab_cs/yhan/envs
+  openvla_oft_repo: /network/rit/lab/wang_lab_cs/yhan/repos/openvla-oft
+  libero_repo: /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO

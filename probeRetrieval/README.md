@@ -37,6 +37,27 @@ python experiments/robot/libero/run_libero_eval.py \
   --center_crop True
 ```
 
+## Goal Baseline OpenVLA
+
+To evaluate the weaker LIBERO-goal checkpoint on the goal suite, use:
+
+```bash
+bash scripts/run_goal_baseline.sh
+```
+
+Default settings:
+
+```bash
+python experiments/robot/libero/run_libero_eval.py \
+  --pretrained_checkpoint openvla/openvla-7b-finetuned-libero-goal \
+  --task_suite_name libero_goal \
+  --num_trials_per_task 50 \
+  --num_images_in_input 1 \
+  --use_proprio False \
+  --use_l1_regression False \
+  --center_crop True
+```
+
 ## Smoke Test Without MuJoCo
 
 The mock mode validates the collection, memory, retrieval, re-ranking, fusion, and evaluation plumbing:

@@ -1,0 +1,195 @@
+Task suite: libero_goal
+Using default initial states
+
+Task: open the middle drawer of the cabinet
+Starting episode 1...
+Episode error: too many values to unpack (expected 2)
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-14_18_27--openvla_oft--episode=1--success=False--task=open_the_middle_drawer_of_the_cabinet.mp4
+Success: False
+# episodes completed so far: 1
+# successes: 0 (0.0%)
+
+Task: open the middle drawer of the cabinet
+Starting episode 2...
+Episode error: too many values to unpack (expected 2)
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-14_18_27--openvla_oft--episode=2--success=False--task=open_the_middle_drawer_of_the_cabinet.mp4
+Success: False
+# episodes completed so far: 2
+# successes: 0 (0.0%)
+Current task success rate: 0.0
+Current total success rate: 0.0
+Using default initial states
+
+Task: put the bowl on the stove
+Starting episode 1...
+Episode error: too many values to unpack (expected 2)
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-14_18_27--openvla_oft--episode=3--success=False--task=put_the_bowl_on_the_stove.mp4
+Success: False
+# episodes completed so far: 3
+# successes: 0 (0.0%)
+
+Task: put the bowl on the stove
+Starting episode 2...
+Episode error: too many values to unpack (expected 2)
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-14_18_27--openvla_oft--episode=4--success=False--task=put_the_bowl_on_the_stove.mp4
+Success: False
+# episodes completed so far: 4
+# successes: 0 (0.0%)
+Current task success rate: 0.0
+Current total success rate: 0.0
+Using default initial states
+
+Task: put the wine bottle on top of the cabinet
+Starting episode 1...
+Episode error: too many values to unpack (expected 2)
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-14_18_27--openvla_oft--episode=5--success=False--task=put_the_wine_bottle_on_top_of_the_cabinet.mp4
+Success: False
+# episodes completed so far: 5
+# successes: 0 (0.0%)
+
+Task: put the wine bottle on top of the cabinet
+Starting episode 2...
+Episode error: too many values to unpack (expected 2)
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-14_18_27--openvla_oft--episode=6--success=False--task=put_the_wine_bottle_on_top_of_the_cabinet.mp4
+Success: False
+# episodes completed so far: 6
+# successes: 0 (0.0%)
+Current task success rate: 0.0
+Current total success rate: 0.0
+Using default initial states
+
+Task: open the top drawer and put the bowl inside
+Starting episode 1...
+Episode error: too many values to unpack (expected 2)
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-14_18_27--openvla_oft--episode=7--success=False--task=open_the_top_drawer_and_put_the_bowl_inside.mp4
+Success: False
+# episodes completed so far: 7
+# successes: 0 (0.0%)
+
+Task: open the top drawer and put the bowl inside
+Starting episode 2...
+Episode error: too many values to unpack (expected 2)
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-14_18_27--openvla_oft--episode=8--success=False--task=open_the_top_drawer_and_put_the_bowl_inside.mp4
+Success: False
+# episodes completed so far: 8
+# successes: 0 (0.0%)
+Current task success rate: 0.0
+Current total success rate: 0.0
+Using default initial states
+
+Task: put the bowl on top of the cabinet
+Starting episode 1...
+Episode error: too many values to unpack (expected 2)
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-14_18_27--openvla_oft--episode=9--success=False--task=put_the_bowl_on_top_of_the_cabinet.mp4
+Success: False
+# episodes completed so far: 9
+# successes: 0 (0.0%)
+
+Task: put the bowl on top of the cabinet
+Starting episode 2...
+Episode error: too many values to unpack (expected 2)
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-14_18_27--openvla_oft--episode=10--success=False--task=put_the_bowl_on_top_of_the_cabinet.mp4
+Success: False
+# episodes completed so far: 10
+# successes: 0 (0.0%)
+Current task success rate: 0.0
+Current total success rate: 0.0
+Using default initial states
+
+Task: push the plate to the front of the stove
+Starting episode 1...
+Episode error: too many values to unpack (expected 2)
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-14_18_27--openvla_oft--episode=11--success=False--task=push_the_plate_to_the_front_of_the_stove.mp4
+Success: False
+# episodes completed so far: 11
+# successes: 0 (0.0%)
+
+Task: push the plate to the front of the stove
+Starting episode 2...
+Episode error: too many values to unpack (expected 2)
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-14_18_27--openvla_oft--episode=12--success=False--task=push_the_plate_to_the_front_of_the_stove.mp4
+Success: False
+# episodes completed so far: 12
+# successes: 0 (0.0%)
+Current task success rate: 0.0
+Current total success rate: 0.0
+Using default initial states
+
+Task: put the cream cheese in the bowl
+Starting episode 1...
+Episode error: too many values to unpack (expected 2)
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-14_18_27--openvla_oft--episode=13--success=False--task=put_the_cream_cheese_in_the_bowl.mp4
+Success: False
+# episodes completed so far: 13
+# successes: 0 (0.0%)
+
+Task: put the cream cheese in the bowl
+Starting episode 2...
+Episode error: too many values to unpack (expected 2)
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-14_18_27--openvla_oft--episode=14--success=False--task=put_the_cream_cheese_in_the_bowl.mp4
+Success: False
+# episodes completed so far: 14
+# successes: 0 (0.0%)
+Current task success rate: 0.0
+Current total success rate: 0.0
+Using default initial states
+
+Task: turn on the stove
+Starting episode 1...
+Episode error: too many values to unpack (expected 2)
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-14_18_27--openvla_oft--episode=15--success=False--task=turn_on_the_stove.mp4
+Success: False
+# episodes completed so far: 15
+# successes: 0 (0.0%)
+
+Task: turn on the stove
+Starting episode 2...
+Episode error: too many values to unpack (expected 2)
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-14_18_27--openvla_oft--episode=16--success=False--task=turn_on_the_stove.mp4
+Success: False
+# episodes completed so far: 16
+# successes: 0 (0.0%)
+Current task success rate: 0.0
+Current total success rate: 0.0
+Using default initial states
+
+Task: put the bowl on the plate
+Starting episode 1...
+Episode error: too many values to unpack (expected 2)
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-14_18_27--openvla_oft--episode=17--success=False--task=put_the_bowl_on_the_plate.mp4
+Success: False
+# episodes completed so far: 17
+# successes: 0 (0.0%)
+
+Task: put the bowl on the plate
+Starting episode 2...
+Episode error: too many values to unpack (expected 2)
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-14_18_27--openvla_oft--episode=18--success=False--task=put_the_bowl_on_the_plate.mp4
+Success: False
+# episodes completed so far: 18
+# successes: 0 (0.0%)
+Current task success rate: 0.0
+Current total success rate: 0.0
+Using default initial states
+
+Task: put the wine bottle on the rack
+Starting episode 1...
+Episode error: too many values to unpack (expected 2)
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-14_18_27--openvla_oft--episode=19--success=False--task=put_the_wine_bottle_on_the_rack.mp4
+Success: False
+# episodes completed so far: 19
+# successes: 0 (0.0%)
+
+Task: put the wine bottle on the rack
+Starting episode 2...
+Episode error: too many values to unpack (expected 2)
+Saved rollout MP4 at path ./rollouts/2026_04_24/2026_04_24-14_18_27--openvla_oft--episode=20--success=False--task=put_the_wine_bottle_on_the_rack.mp4
+Success: False
+# episodes completed so far: 20
+# successes: 0 (0.0%)
+Current task success rate: 0.0
+Current total success rate: 0.0
+Final results:
+Total episodes: 20
+Total successes: 0
+Overall success rate: 0.0000 (0.0%)
