@@ -69,7 +69,11 @@ def make_generate_config(cfg: Mapping[str, Any]):
         num_trials_per_task=int(cfg.get("num_trials_per_task", 1)),
         seed=int(cfg.get("seed", 0)),
         local_log_dir=str(Path(cfg.get("paths", {}).get("output_dir", "artifacts")) / "openvla_logs"),
-        num_open_loop_steps=NUM_ACTIONS_CHUNK,
+        num_open_loop_steps=int(cfg.get("num_open_loop_steps", NUM_ACTIONS_CHUNK)),
+        num_images_in_input=int(cfg.get("num_images_in_input", 1)),
+        use_proprio=bool(cfg.get("use_proprio", False)),
+        use_l1_regression=bool(cfg.get("use_l1_regression", False)),
+        use_diffusion=bool(cfg.get("use_diffusion", False)),
         load_in_8bit=bool(cfg.get("policy", {}).get("load_in_8bit", False)),
         load_in_4bit=bool(cfg.get("policy", {}).get("load_in_4bit", False)),
     )
