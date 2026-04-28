@@ -1,0 +1,418 @@
+{
+  "by_task": {
+    "push the plate to the front of the stove": {
+      "friction_mu_0.05": {
+        "mean_contact_ratio": 0.386656863273793,
+        "mean_force": 0.0002797761000692865,
+        "mean_post_probe_object_to_target_distance": null,
+        "mean_probe_obj_displacement": 0.0,
+        "n": 10,
+        "success_rate": 0.5
+      },
+      "friction_mu_0.2": {
+        "mean_contact_ratio": 0.493315945246023,
+        "mean_force": 0.0004430979068274619,
+        "mean_post_probe_object_to_target_distance": null,
+        "mean_probe_obj_displacement": 0.0,
+        "n": 10,
+        "success_rate": 0.6
+      },
+      "friction_mu_0.5": {
+        "mean_contact_ratio": 0.5408381577387259,
+        "mean_force": 0.00035275306545372683,
+        "mean_post_probe_object_to_target_distance": null,
+        "mean_probe_obj_displacement": 0.0,
+        "n": 10,
+        "success_rate": 0.5
+      },
+      "friction_mu_0.7": {
+        "mean_contact_ratio": 0.4903220397324941,
+        "mean_force": 0.00042395890413899994,
+        "mean_post_probe_object_to_target_distance": null,
+        "mean_probe_obj_displacement": 0.0,
+        "n": 10,
+        "success_rate": 0.5
+      },
+      "mass_scale_0.05": {
+        "mean_contact_ratio": 0.5115194321419095,
+        "mean_force": 0.0013301476225024088,
+        "mean_post_probe_object_to_target_distance": null,
+        "mean_probe_obj_displacement": 0.0,
+        "n": 10,
+        "success_rate": 0.4
+      },
+      "mass_scale_0.5": {
+        "mean_contact_ratio": 0.34635062668570527,
+        "mean_force": 0.004337031312752515,
+        "mean_post_probe_object_to_target_distance": null,
+        "mean_probe_obj_displacement": 0.0,
+        "n": 10,
+        "success_rate": 0.3
+      },
+      "mass_scale_10": {
+        "mean_contact_ratio": 0.40733333333333344,
+        "mean_force": 1.225704735517502,
+        "mean_post_probe_object_to_target_distance": null,
+        "mean_probe_obj_displacement": 0.0,
+        "n": 10,
+        "success_rate": 0.0
+      },
+      "mass_scale_3": {
+        "mean_contact_ratio": 0.4419012345679012,
+        "mean_force": 0.10600887574255466,
+        "mean_post_probe_object_to_target_distance": null,
+        "mean_probe_obj_displacement": 0.0,
+        "n": 10,
+        "success_rate": 0.1
+      },
+      "mass_scale_5": {
+        "mean_contact_ratio": 0.4759668545550899,
+        "mean_force": 0.3140348307788372,
+        "mean_post_probe_object_to_target_distance": null,
+        "mean_probe_obj_displacement": 0.0,
+        "n": 10,
+        "success_rate": 0.3
+      },
+      "mass_scale_7": {
+        "mean_contact_ratio": 0.47064927286931973,
+        "mean_force": 0.5395144611597061,
+        "mean_post_probe_object_to_target_distance": null,
+        "mean_probe_obj_displacement": 0.0,
+        "n": 10,
+        "success_rate": 0.3
+      }
+    },
+    "put the bowl on the stove": {
+      "friction_mu_0.05": {
+        "mean_contact_ratio": 0.3256177405033839,
+        "mean_force": 0.00012205432794872156,
+        "mean_post_probe_object_to_target_distance": null,
+        "mean_probe_obj_displacement": 0.0,
+        "n": 10,
+        "success_rate": 0.6
+      },
+      "friction_mu_0.2": {
+        "mean_contact_ratio": 0.26760439744442516,
+        "mean_force": 0.00010001287409977934,
+        "mean_post_probe_object_to_target_distance": null,
+        "mean_probe_obj_displacement": 0.0,
+        "n": 10,
+        "success_rate": 0.4
+      },
+      "friction_mu_0.5": {
+        "mean_contact_ratio": 0.269467014227002,
+        "mean_force": 8.725294828764163e-05,
+        "mean_post_probe_object_to_target_distance": null,
+        "mean_probe_obj_displacement": 0.0,
+        "n": 10,
+        "success_rate": 0.5
+      },
+      "friction_mu_0.7": {
+        "mean_contact_ratio": 0.2324530446112752,
+        "mean_force": 7.634646499356107e-05,
+        "mean_post_probe_object_to_target_distance": null,
+        "mean_probe_obj_displacement": 0.0,
+        "n": 10,
+        "success_rate": 0.4
+      },
+      "mass_scale_0.05": {
+        "mean_contact_ratio": 0.3512555093798005,
+        "mean_force": 0.000593761759228073,
+        "mean_post_probe_object_to_target_distance": null,
+        "mean_probe_obj_displacement": 0.0,
+        "n": 10,
+        "success_rate": 0.6
+      },
+      "mass_scale_0.5": {
+        "mean_contact_ratio": 0.2221646999335603,
+        "mean_force": 0.002255294949281961,
+        "mean_post_probe_object_to_target_distance": null,
+        "mean_probe_obj_displacement": 0.0,
+        "n": 10,
+        "success_rate": 0.3
+      },
+      "mass_scale_10": {
+        "mean_contact_ratio": 0.26368689174576476,
+        "mean_force": 0.7671950131654739,
+        "mean_post_probe_object_to_target_distance": null,
+        "mean_probe_obj_displacement": 0.0,
+        "n": 10,
+        "success_rate": 0.4
+      },
+      "mass_scale_3": {
+        "mean_contact_ratio": 0.3803060174149283,
+        "mean_force": 0.057842918857932094,
+        "mean_post_probe_object_to_target_distance": null,
+        "mean_probe_obj_displacement": 0.0,
+        "n": 10,
+        "success_rate": 0.6
+      },
+      "mass_scale_5": {
+        "mean_contact_ratio": 0.32780826217026626,
+        "mean_force": 0.17401564940810205,
+        "mean_post_probe_object_to_target_distance": null,
+        "mean_probe_obj_displacement": 0.0,
+        "n": 10,
+        "success_rate": 0.6
+      },
+      "mass_scale_7": {
+        "mean_contact_ratio": 0.1175788454087563,
+        "mean_force": 0.3223994866013527,
+        "mean_post_probe_object_to_target_distance": null,
+        "mean_probe_obj_displacement": 0.0,
+        "n": 10,
+        "success_rate": 0.2
+      }
+    },
+    "put the bowl on top of the cabinet": {
+      "friction_mu_0.05": {
+        "mean_contact_ratio": 0.36768456295530483,
+        "mean_force": 0.00018780511190926021,
+        "mean_post_probe_object_to_target_distance": null,
+        "mean_probe_obj_displacement": 0.0,
+        "n": 10,
+        "success_rate": 0.6
+      },
+      "friction_mu_0.2": {
+        "mean_contact_ratio": 0.47963373973482193,
+        "mean_force": 0.0002528151006117696,
+        "mean_post_probe_object_to_target_distance": null,
+        "mean_probe_obj_displacement": 0.0,
+        "n": 10,
+        "success_rate": 0.6
+      },
+      "friction_mu_0.5": {
+        "mean_contact_ratio": 0.5257098852242621,
+        "mean_force": 0.00024205750742112712,
+        "mean_post_probe_object_to_target_distance": null,
+        "mean_probe_obj_displacement": 0.0,
+        "n": 10,
+        "success_rate": 0.8
+      },
+      "friction_mu_0.7": {
+        "mean_contact_ratio": 0.5000943143746075,
+        "mean_force": 0.00019862442204612727,
+        "mean_post_probe_object_to_target_distance": null,
+        "mean_probe_obj_displacement": 0.0,
+        "n": 10,
+        "success_rate": 0.7
+      },
+      "mass_scale_0.05": {
+        "mean_contact_ratio": 0.32273365250689307,
+        "mean_force": 0.0007476982573280111,
+        "mean_post_probe_object_to_target_distance": null,
+        "mean_probe_obj_displacement": 0.0,
+        "n": 10,
+        "success_rate": 0.3
+      },
+      "mass_scale_0.5": {
+        "mean_contact_ratio": 0.4467430544033332,
+        "mean_force": 0.0031805703882128,
+        "mean_post_probe_object_to_target_distance": null,
+        "mean_probe_obj_displacement": 0.0,
+        "n": 10,
+        "success_rate": 0.6
+      },
+      "mass_scale_10": {
+        "mean_contact_ratio": 0.4613486215820119,
+        "mean_force": 0.7340741574764251,
+        "mean_post_probe_object_to_target_distance": null,
+        "mean_probe_obj_displacement": 0.0,
+        "n": 10,
+        "success_rate": 0.7
+      },
+      "mass_scale_3": {
+        "mean_contact_ratio": 0.5425906036312198,
+        "mean_force": 0.061304507032036784,
+        "mean_post_probe_object_to_target_distance": null,
+        "mean_probe_obj_displacement": 0.0,
+        "n": 10,
+        "success_rate": 0.6
+      },
+      "mass_scale_5": {
+        "mean_contact_ratio": 0.39136981218218003,
+        "mean_force": 0.1595449425280094,
+        "mean_post_probe_object_to_target_distance": null,
+        "mean_probe_obj_displacement": 0.0,
+        "n": 10,
+        "success_rate": 0.6
+      },
+      "mass_scale_7": {
+        "mean_contact_ratio": 0.40100700240945386,
+        "mean_force": 0.34048972129821775,
+        "mean_post_probe_object_to_target_distance": null,
+        "mean_probe_obj_displacement": 0.0,
+        "n": 10,
+        "success_rate": 0.6
+      }
+    },
+    "put the cream cheese in the bowl": {
+      "friction_mu_0.05": {
+        "mean_contact_ratio": 0.3112261962775916,
+        "mean_force": 7.697123182879296e-05,
+        "mean_post_probe_object_to_target_distance": null,
+        "mean_probe_obj_displacement": 0.0,
+        "n": 10,
+        "success_rate": 0.4
+      },
+      "friction_mu_0.2": {
+        "mean_contact_ratio": 0.3557251812953238,
+        "mean_force": 8.238961177085003e-05,
+        "mean_post_probe_object_to_target_distance": null,
+        "mean_probe_obj_displacement": 0.0,
+        "n": 10,
+        "success_rate": 0.3
+      },
+      "friction_mu_0.5": {
+        "mean_contact_ratio": 0.2534295409486046,
+        "mean_force": 6.620508820560644e-05,
+        "mean_post_probe_object_to_target_distance": null,
+        "mean_probe_obj_displacement": 0.0,
+        "n": 10,
+        "success_rate": 0.3
+      },
+      "friction_mu_0.7": {
+        "mean_contact_ratio": 0.361033453764471,
+        "mean_force": 6.494478238892044e-05,
+        "mean_post_probe_object_to_target_distance": null,
+        "mean_probe_obj_displacement": 0.0,
+        "n": 10,
+        "success_rate": 0.5
+      },
+      "mass_scale_0.05": {
+        "mean_contact_ratio": 0.3119520502135103,
+        "mean_force": 0.00047096614725887774,
+        "mean_post_probe_object_to_target_distance": null,
+        "mean_probe_obj_displacement": 0.0,
+        "n": 10,
+        "success_rate": 0.4
+      },
+      "mass_scale_0.5": {
+        "mean_contact_ratio": 0.34808543171952755,
+        "mean_force": 0.0025573834544047715,
+        "mean_post_probe_object_to_target_distance": null,
+        "mean_probe_obj_displacement": 0.0,
+        "n": 10,
+        "success_rate": 0.4
+      },
+      "mass_scale_10": {
+        "mean_contact_ratio": 0.17301498617779715,
+        "mean_force": 0.7586094111204147,
+        "mean_post_probe_object_to_target_distance": null,
+        "mean_probe_obj_displacement": 0.0,
+        "n": 10,
+        "success_rate": 0.2
+      },
+      "mass_scale_3": {
+        "mean_contact_ratio": 0.1743391996647811,
+        "mean_force": 0.05468641351908445,
+        "mean_post_probe_object_to_target_distance": null,
+        "mean_probe_obj_displacement": 0.0,
+        "n": 10,
+        "success_rate": 0.2
+      },
+      "mass_scale_5": {
+        "mean_contact_ratio": 0.23616422116391794,
+        "mean_force": 0.17570438161492347,
+        "mean_post_probe_object_to_target_distance": null,
+        "mean_probe_obj_displacement": 0.0,
+        "n": 10,
+        "success_rate": 0.4
+      },
+      "mass_scale_7": {
+        "mean_contact_ratio": 0.2477391774891775,
+        "mean_force": 0.3747518241405487,
+        "mean_post_probe_object_to_target_distance": null,
+        "mean_probe_obj_displacement": 0.0,
+        "n": 10,
+        "success_rate": 0.2
+      }
+    },
+    "put the wine bottle on top of the cabinet": {
+      "friction_mu_0.05": {
+        "mean_contact_ratio": 0.4283998669986386,
+        "mean_force": 0.00013708154438063554,
+        "mean_post_probe_object_to_target_distance": null,
+        "mean_probe_obj_displacement": 0.0,
+        "n": 10,
+        "success_rate": 0.7
+      },
+      "friction_mu_0.2": {
+        "mean_contact_ratio": 0.31667424561336754,
+        "mean_force": 8.413622126681953e-05,
+        "mean_post_probe_object_to_target_distance": null,
+        "mean_probe_obj_displacement": 0.0,
+        "n": 10,
+        "success_rate": 0.5
+      },
+      "friction_mu_0.5": {
+        "mean_contact_ratio": 0.4725100481128264,
+        "mean_force": 0.0001685753821220721,
+        "mean_post_probe_object_to_target_distance": null,
+        "mean_probe_obj_displacement": 0.0,
+        "n": 10,
+        "success_rate": 0.8
+      },
+      "friction_mu_0.7": {
+        "mean_contact_ratio": 0.3927167624700832,
+        "mean_force": 0.00012895635663881018,
+        "mean_post_probe_object_to_target_distance": null,
+        "mean_probe_obj_displacement": 0.0,
+        "n": 10,
+        "success_rate": 0.7
+      },
+      "mass_scale_0.05": {
+        "mean_contact_ratio": 0.40387502955981225,
+        "mean_force": 0.0016723147477023304,
+        "mean_post_probe_object_to_target_distance": null,
+        "mean_probe_obj_displacement": 0.0,
+        "n": 10,
+        "success_rate": 0.6
+      },
+      "mass_scale_0.5": {
+        "mean_contact_ratio": 0.3095166495330718,
+        "mean_force": 0.008338272711262107,
+        "mean_post_probe_object_to_target_distance": null,
+        "mean_probe_obj_displacement": 0.0,
+        "n": 10,
+        "success_rate": 0.5
+      },
+      "mass_scale_10": {
+        "mean_contact_ratio": 0.3403799253558807,
+        "mean_force": 2.9387356996536256,
+        "mean_post_probe_object_to_target_distance": null,
+        "mean_probe_obj_displacement": 0.0,
+        "n": 10,
+        "success_rate": 0.5
+      },
+      "mass_scale_3": {
+        "mean_contact_ratio": 0.3826282619598076,
+        "mean_force": 0.20993765890598298,
+        "mean_post_probe_object_to_target_distance": null,
+        "mean_probe_obj_displacement": 0.0,
+        "n": 10,
+        "success_rate": 0.7
+      },
+      "mass_scale_5": {
+        "mean_contact_ratio": 0.39713322993601846,
+        "mean_force": 0.6690960824489594,
+        "mean_post_probe_object_to_target_distance": null,
+        "mean_probe_obj_displacement": 0.0,
+        "n": 10,
+        "success_rate": 0.7
+      },
+      "mass_scale_7": {
+        "mean_contact_ratio": 0.38889673798289676,
+        "mean_force": 1.439865803718567,
+        "mean_post_probe_object_to_target_distance": null,
+        "mean_probe_obj_displacement": 0.0,
+        "n": 10,
+        "success_rate": 0.6
+      }
+    }
+  },
+  "overall": {
+    "num_episodes": 500,
+    "success_rate": 0.476
+  }
+}
