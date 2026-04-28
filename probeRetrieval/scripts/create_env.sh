@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-ENV_ROOT="/network/rit/lab/wang_lab_cs/yhan/envs"
-ENV_DIR="${ENV_ROOT}/probeRetrieval"
-PROJECT_DIR="/network/rit/lab/wang_lab_cs/yhan/CausalRetrieval/probeRetrieval"
+PROJECT_DIR="${PROJECT_DIR:-$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)}"
+ENV_ROOT="${ENV_ROOT:-/network/rit/lab/wang_lab_cs/yhan/envs}"
+ENV_DIR="${ENV_DIR:-${ENV_ROOT}/probeRetrieval}"
 
 mkdir -p "${ENV_ROOT}"
 

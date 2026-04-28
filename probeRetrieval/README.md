@@ -20,6 +20,33 @@ With the local repos used in this workspace, install the real dependencies with:
 bash scripts/install_real_deps.sh
 ```
 
+## Teammate Setup
+
+`requirements.txt` is only the minimal dependency set for the lightweight utilities in this repo. To run the real OpenVLA/LIBERO experiments, your teammate also needs:
+
+- this `probeRetrieval` repo
+- the `openvla-oft` repo
+- the `LIBERO` repo
+
+A portable setup flow looks like:
+
+```bash
+git clone <your-probeRetrieval-repo>
+git clone <openvla-oft-repo>
+git clone <LIBERO-repo>
+
+cd probeRetrieval
+ENV_DIR=/path/to/envs/probeRetrieval bash scripts/create_env.sh
+conda activate /path/to/envs/probeRetrieval
+
+ENV_DIR=/path/to/envs/probeRetrieval \
+OPENVLA_OFT_REPO=/path/to/openvla-oft \
+LIBERO_REPO=/path/to/LIBERO \
+bash scripts/install_real_deps.sh
+```
+
+If your teammate only wants to run the real experiments, sending `requirements.txt` by itself is not enough; the editable installs from `openvla-oft` and `LIBERO` are also required.
+
 ## Baseline OpenVLA
 
 The baseline script wraps the official evaluation command from the spec:

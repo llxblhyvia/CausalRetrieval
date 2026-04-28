@@ -1,7 +1,0 @@
-{
-  "log_path": "artifacts/env_smoke/collection_episodes.jsonl",
-  "memory_dir": "artifacts/env_smoke/memory_bank",
-  "num_episodes": 10,
-  "num_items": 10,
-  "success_rate": 1.0
-}
