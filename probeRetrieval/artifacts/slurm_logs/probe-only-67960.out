@@ -1,0 +1,4 @@
+Launched 4 workers in background.
+Run directory: /network/rit/lab/wang_lab_cs/yhan/CausalRetrieval/probeRetrieval/artifacts/goal_probe_retrieval_test_eval_4gpu_video_ablation/probe_only/20260502_102244
+PIDs saved to: /network/rit/lab/wang_lab_cs/yhan/CausalRetrieval/probeRetrieval/artifacts/goal_probe_retrieval_test_eval_4gpu_video_ablation/probe_only/20260502_102244/pids.txt
+Waiting for workers to finish...

@@ -19,6 +19,8 @@ if [[ ! -f "${RUN_SCRIPT}" ]]; then
   exit 2
 fi
 
+PIDS=()
+
 launch_worker() {
   local gpu="$1"
   local task_names="$2"
@@ -37,20 +39,16 @@ launch_worker() {
       --output_dir "${worker_dir}" \
       --variant "${VARIANT}" \
       "$@" > "${log_file}" 2>&1 < /dev/null &
-  echo $!
+  local pid="$!"
+  PIDS+=("${pid}")
+  printf "gpu%s %s\n" "${gpu}" "${pid}" >> "${RUN_DIR}/pids.txt"
 }
 
-PID0="$(launch_worker 0 push_the_plate_to_the_front_of_the_stove,put_the_cream_cheese_in_the_bowl)"
-PID1="$(launch_worker 1 put_the_bowl_on_the_stove)"
-PID2="$(launch_worker 2 put_the_bowl_on_top_of_the_cabinet)"
-PID3="$(launch_worker 3 put_the_wine_bottle_on_top_of_the_cabinet)"
-
-cat > "${RUN_DIR}/pids.txt" <<EOF
-gpu0 ${PID0}
-gpu1 ${PID1}
-gpu2 ${PID2}
-gpu3 ${PID3}
-EOF
+: > "${RUN_DIR}/pids.txt"
+launch_worker 0 push_the_plate_to_the_front_of_the_stove,put_the_cream_cheese_in_the_bowl "$@"
+launch_worker 1 put_the_bowl_on_the_stove "$@"
+launch_worker 2 put_the_bowl_on_top_of_the_cabinet "$@"
+launch_worker 3 put_the_wine_bottle_on_top_of_the_cabinet "$@"
 
 cat > "${RUN_DIR}/README.txt" <<EOF
 Goal probe retrieval test eval 4-GPU run
@@ -78,6 +76,6 @@ echo "Run directory: ${RUN_DIR}"
 echo "PIDs saved to: ${RUN_DIR}/pids.txt"
 if [[ "${WAIT_FOR_WORKERS}" == "1" ]]; then
   echo "Waiting for workers to finish..."
-  wait "${PID0}" "${PID1}" "${PID2}" "${PID3}"
+  wait "${PIDS[@]}"
   echo "All workers finished."
 fi

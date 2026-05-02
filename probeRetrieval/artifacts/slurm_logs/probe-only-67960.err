@@ -1,0 +1,4 @@
+scripts/run_goal_probe_retrieval_test_eval_4gpu.sh: line 81: wait: pid 2584061 is not a child of this shell
+scripts/run_goal_probe_retrieval_test_eval_4gpu.sh: line 81: wait: pid 2584064 is not a child of this shell
+scripts/run_goal_probe_retrieval_test_eval_4gpu.sh: line 81: wait: pid 2584068 is not a child of this shell
+scripts/run_goal_probe_retrieval_test_eval_4gpu.sh: line 81: wait: pid 2584074 is not a child of this shell
