@@ -23,5 +23,5 @@ export RESPONSE_JSONL="${RESPONSE_JSONL:-artifacts/collect_goal_probe_memory_swe
 
 bash scripts/run_goal_probe_retrieval_test_eval_4gpu.sh \
   --save_video \
-  --video_every 1 \
+  --video_every 10 \
   --video_fps 20
