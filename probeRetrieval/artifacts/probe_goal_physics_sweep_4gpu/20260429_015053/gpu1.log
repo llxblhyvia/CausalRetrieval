@@ -1,0 +1,10 @@
+usage: probe_goal_physics_sweep.py [-h] [--output_dir OUTPUT_DIR]
+                                   [--task_ids TASK_IDS]
+                                   [--task_names TASK_NAMES]
+                                   [--frictions FRICTIONS]
+                                   [--mass_scales MASS_SCALES]
+                                   [--episodes_per_setting EPISODES_PER_SETTING]
+                                   [--save_video] [--video_every VIDEO_EVERY]
+                                   [--video_fps VIDEO_FPS]
+                                   [--max_steps MAX_STEPS]
+probe_goal_physics_sweep.py: error: unrecognized arguments: 1 put_the_bowl_on_the_stove

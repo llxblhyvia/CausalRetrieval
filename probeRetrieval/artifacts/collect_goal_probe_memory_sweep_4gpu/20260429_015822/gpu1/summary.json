@@ -1,0 +1,50 @@
+{
+  "by_task": {
+    "put the bowl on the stove": {
+      "friction_mu_0.2": {
+        "mean_contact_ratio": 0.460904441375262,
+        "mean_force": 0.00012192094582132995,
+        "mean_post_probe_object_to_target_distance": 0.2700051128864288,
+        "mean_probe_obj_displacement": 0.005487807621830143,
+        "n": 10,
+        "success_rate": 0.8
+      },
+      "friction_mu_0.7": {
+        "mean_contact_ratio": 0.38533764274940746,
+        "mean_force": 0.00011524338042363936,
+        "mean_post_probe_object_to_target_distance": 0.2708095990949207,
+        "mean_probe_obj_displacement": 0.0036426469683647155,
+        "n": 10,
+        "success_rate": 0.8
+      },
+      "mass_scale_0.5": {
+        "mean_contact_ratio": 0.3911974591636635,
+        "mean_force": 0.0026153480634093285,
+        "mean_post_probe_object_to_target_distance": 0.27093670666217806,
+        "mean_probe_obj_displacement": 0.006462790147634223,
+        "n": 10,
+        "success_rate": 0.7
+      },
+      "mass_scale_3": {
+        "mean_contact_ratio": 0.27787294938285034,
+        "mean_force": 0.04855766464024782,
+        "mean_post_probe_object_to_target_distance": 0.26787565276026726,
+        "mean_probe_obj_displacement": 0.005983123555779457,
+        "n": 10,
+        "success_rate": 0.4
+      },
+      "mass_scale_7": {
+        "mean_contact_ratio": 0.4314784008612449,
+        "mean_force": 0.37708825021982195,
+        "mean_post_probe_object_to_target_distance": 0.26841900795698165,
+        "mean_probe_obj_displacement": 0.0040580281871370975,
+        "n": 10,
+        "success_rate": 0.8
+      }
+    }
+  },
+  "overall": {
+    "num_episodes": 50,
+    "success_rate": 0.7
+  }
+}

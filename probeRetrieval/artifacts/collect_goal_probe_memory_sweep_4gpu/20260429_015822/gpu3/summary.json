@@ -1,0 +1,50 @@
+{
+  "by_task": {
+    "put the wine bottle on top of the cabinet": {
+      "friction_mu_0.2": {
+        "mean_contact_ratio": 0.4143516090370943,
+        "mean_force": 7.82477643952022e-05,
+        "mean_post_probe_object_to_target_distance": 0.3847228629248483,
+        "mean_probe_obj_displacement": 0.003063585399650037,
+        "n": 10,
+        "success_rate": 0.7
+      },
+      "friction_mu_0.7": {
+        "mean_contact_ratio": 0.33217681207958705,
+        "mean_force": 0.00011399348659324622,
+        "mean_post_probe_object_to_target_distance": 0.3829911606652396,
+        "mean_probe_obj_displacement": 0.0028429555823095143,
+        "n": 10,
+        "success_rate": 0.6
+      },
+      "mass_scale_0.5": {
+        "mean_contact_ratio": 0.5456731409162026,
+        "mean_force": 0.00803309646435082,
+        "mean_post_probe_object_to_target_distance": 0.38336730003356934,
+        "mean_probe_obj_displacement": 0.002679638788686134,
+        "n": 10,
+        "success_rate": 0.8
+      },
+      "mass_scale_3": {
+        "mean_contact_ratio": 0.4342655584077605,
+        "mean_force": 0.19270234704017639,
+        "mean_post_probe_object_to_target_distance": 0.38132108913527596,
+        "mean_probe_obj_displacement": 0.00633206341881305,
+        "n": 10,
+        "success_rate": 0.8
+      },
+      "mass_scale_7": {
+        "mean_contact_ratio": 0.42285908227795926,
+        "mean_force": 1.360422432422638,
+        "mean_post_probe_object_to_target_distance": 0.3860294297337532,
+        "mean_probe_obj_displacement": 0.0023055053519783542,
+        "n": 10,
+        "success_rate": 0.6
+      }
+    }
+  },
+  "overall": {
+    "num_episodes": 50,
+    "success_rate": 0.7
+  }
+}

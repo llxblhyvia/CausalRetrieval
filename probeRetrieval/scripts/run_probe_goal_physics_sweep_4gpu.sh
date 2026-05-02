@@ -20,6 +20,7 @@ launch_worker() {
   local task_names="$2"
   local worker_dir="${RUN_DIR}/gpu${gpu}"
   local log_file="${RUN_DIR}/gpu${gpu}.log"
+  shift 2
 
   mkdir -p "${worker_dir}"
   nohup env \

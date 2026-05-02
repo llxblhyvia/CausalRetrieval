@@ -1,0 +1,4 @@
+nohup: ignoring input
+Launched 4 workers in background.
+Run directory: /network/rit/lab/wang_lab_cs/yhan/CausalRetrieval/probeRetrieval/artifacts/goal_probe_retrieval_test_eval_4gpu/20260429_161402
+PIDs saved to: /network/rit/lab/wang_lab_cs/yhan/CausalRetrieval/probeRetrieval/artifacts/goal_probe_retrieval_test_eval_4gpu/20260429_161402/pids.txt

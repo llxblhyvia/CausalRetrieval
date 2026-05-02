@@ -1,0 +1,92 @@
+{
+  "by_task": {
+    "push the plate to the front of the stove": {
+      "friction_mu_0.2": {
+        "mean_contact_ratio": 0.5616440429300059,
+        "mean_force": 0.00035269940563011917,
+        "mean_post_probe_object_to_target_distance": 0.2463405877351761,
+        "mean_probe_obj_displacement": 0.007221647907863371,
+        "n": 10,
+        "success_rate": 0.5
+      },
+      "friction_mu_0.7": {
+        "mean_contact_ratio": 0.5433819793281366,
+        "mean_force": 0.00042402926919749093,
+        "mean_post_probe_object_to_target_distance": 0.24923796123928493,
+        "mean_probe_obj_displacement": 0.004410314300912432,
+        "n": 10,
+        "success_rate": 0.5
+      },
+      "mass_scale_0.5": {
+        "mean_contact_ratio": 0.42644545399998757,
+        "mean_force": 0.004633873689454049,
+        "mean_post_probe_object_to_target_distance": 0.25280980616807935,
+        "mean_probe_obj_displacement": 0.0013342368212761358,
+        "n": 10,
+        "success_rate": 0.4
+      },
+      "mass_scale_3": {
+        "mean_contact_ratio": 0.48245339768558104,
+        "mean_force": 0.10357645750045777,
+        "mean_post_probe_object_to_target_distance": 0.251204289495945,
+        "mean_probe_obj_displacement": 0.003745602454728214,
+        "n": 10,
+        "success_rate": 0.3
+      },
+      "mass_scale_7": {
+        "mean_contact_ratio": 0.4712584687287221,
+        "mean_force": 0.6320621430873871,
+        "mean_post_probe_object_to_target_distance": 0.2523975566029549,
+        "mean_probe_obj_displacement": 0.0012337169522652403,
+        "n": 10,
+        "success_rate": 0.5
+      }
+    },
+    "put the cream cheese in the bowl": {
+      "friction_mu_0.2": {
+        "mean_contact_ratio": 0.24655944774913713,
+        "mean_force": 4.12949261317408e-05,
+        "mean_post_probe_object_to_target_distance": 0.13205502405762673,
+        "mean_probe_obj_displacement": 0.009454978187568486,
+        "n": 10,
+        "success_rate": 0.2
+      },
+      "friction_mu_0.7": {
+        "mean_contact_ratio": 0.21636957813428398,
+        "mean_force": 7.344470741372795e-05,
+        "mean_post_probe_object_to_target_distance": 0.13577907698021996,
+        "mean_probe_obj_displacement": 0.007176150940358639,
+        "n": 10,
+        "success_rate": 0.2
+      },
+      "mass_scale_0.5": {
+        "mean_contact_ratio": 0.266980731686614,
+        "mean_force": 0.0021729968721047044,
+        "mean_post_probe_object_to_target_distance": 0.13631634414196014,
+        "mean_probe_obj_displacement": 0.0050021247705444695,
+        "n": 10,
+        "success_rate": 0.2
+      },
+      "mass_scale_3": {
+        "mean_contact_ratio": 0.2833828391921994,
+        "mean_force": 0.05327015556395054,
+        "mean_post_probe_object_to_target_distance": 0.1341026470065117,
+        "mean_probe_obj_displacement": 0.004755408363416791,
+        "n": 10,
+        "success_rate": 0.4
+      },
+      "mass_scale_7": {
+        "mean_contact_ratio": 0.1991217345480399,
+        "mean_force": 0.3586493253707886,
+        "mean_post_probe_object_to_target_distance": 0.1312141524893897,
+        "mean_probe_obj_displacement": 0.004803386179264635,
+        "n": 10,
+        "success_rate": 0.2
+      }
+    }
+  },
+  "overall": {
+    "num_episodes": 100,
+    "success_rate": 0.34
+  }
+}

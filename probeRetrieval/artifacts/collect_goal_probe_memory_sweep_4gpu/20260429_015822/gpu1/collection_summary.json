@@ -1,0 +1,7 @@
+{
+  "episodes_path": "/network/rit/lab/wang_lab_cs/yhan/CausalRetrieval/probeRetrieval/artifacts/collect_goal_probe_memory_sweep_4gpu/20260429_015822/gpu1/episodes.jsonl",
+  "memory_dir": "/network/rit/lab/wang_lab_cs/yhan/CausalRetrieval/probeRetrieval/artifacts/collect_goal_probe_memory_sweep_4gpu/20260429_015822/gpu1/memory_bank",
+  "num_episodes": 50,
+  "num_items": 47,
+  "success_rate": 0.7
+}

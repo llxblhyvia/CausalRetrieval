@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Dict, List
+from typing import Dict, Iterable, List
 
 import numpy as np
 
@@ -17,9 +17,23 @@ def cosine_scores(query: np.ndarray, matrix: np.ndarray, eps: float = 1.0e-6) ->
     return ((matrix @ query.T).reshape(-1) / ((m_norm.reshape(-1) * q_norm.reshape(-1)[0]) + eps)).astype(np.float32)
 
 
-def retrieve_top_k(query_embedding: np.ndarray, bank: MemoryBank, k: int, eps: float = 1.0e-6) -> List[Dict[str, float]]:
+def retrieve_top_k(
+    query_embedding: np.ndarray,
+    bank: MemoryBank,
+    k: int,
+    eps: float = 1.0e-6,
+    allowed_indices: Iterable[int] | None = None,
+) -> List[Dict[str, float]]:
     scores = cosine_scores(query_embedding, bank.image_matrix(), eps=eps)
     if scores.size == 0:
         return []
-    order = np.argsort(-scores)[: int(k)]
+    if allowed_indices is not None:
+        allowed = np.asarray(sorted({int(idx) for idx in allowed_indices}), dtype=np.int64)
+        if allowed.size == 0:
+            return []
+        filtered_scores = scores[allowed]
+        local_order = np.argsort(-filtered_scores)[: int(k)]
+        order = allowed[local_order]
+    else:
+        order = np.argsort(-scores)[: int(k)]
     return [{"index": int(idx), "score": float(scores[idx]), "episode_id": bank.items[int(idx)].episode_id} for idx in order]

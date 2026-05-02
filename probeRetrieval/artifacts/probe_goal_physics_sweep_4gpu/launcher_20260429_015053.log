@@ -1,0 +1,6 @@
+nohup: ignoring input
+Launched 4 workers in background.
+Run directory: /network/rit/lab/wang_lab_cs/yhan/CausalRetrieval/probeRetrieval/artifacts/probe_goal_physics_sweep_4gpu/20260429_015053
+PIDs saved to: /network/rit/lab/wang_lab_cs/yhan/CausalRetrieval/probeRetrieval/artifacts/probe_goal_physics_sweep_4gpu/20260429_015053/pids.txt
+Tail logs with:
+  tail -f /network/rit/lab/wang_lab_cs/yhan/CausalRetrieval/probeRetrieval/artifacts/probe_goal_physics_sweep_4gpu/20260429_015053/gpu0.log /network/rit/lab/wang_lab_cs/yhan/CausalRetrieval/probeRetrieval/artifacts/probe_goal_physics_sweep_4gpu/20260429_015053/gpu1.log /network/rit/lab/wang_lab_cs/yhan/CausalRetrieval/probeRetrieval/artifacts/probe_goal_physics_sweep_4gpu/20260429_015053/gpu2.log /network/rit/lab/wang_lab_cs/yhan/CausalRetrieval/probeRetrieval/artifacts/probe_goal_physics_sweep_4gpu/20260429_015053/gpu3.log

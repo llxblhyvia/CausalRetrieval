@@ -1,0 +1,35 @@
+{
+  "episodes_path": "artifacts/collect_goal_probe_memory_sweep_4gpu/20260429_015822/merged/episodes.jsonl",
+  "memory_dir": "artifacts/collect_goal_probe_memory_sweep_4gpu/20260429_015822/merged/memory_bank",
+  "num_items": 228,
+  "num_rows": 250,
+  "num_shards": 4,
+  "run_dir": "artifacts/collect_goal_probe_memory_sweep_4gpu/20260429_015822",
+  "shards": [
+    {
+      "num_items": 95,
+      "num_rows": 100,
+      "shard": "gpu0",
+      "summary_path": "artifacts/collect_goal_probe_memory_sweep_4gpu/20260429_015822/gpu0/collection_summary.json"
+    },
+    {
+      "num_items": 47,
+      "num_rows": 50,
+      "shard": "gpu1",
+      "summary_path": "artifacts/collect_goal_probe_memory_sweep_4gpu/20260429_015822/gpu1/collection_summary.json"
+    },
+    {
+      "num_items": 46,
+      "num_rows": 50,
+      "shard": "gpu2",
+      "summary_path": "artifacts/collect_goal_probe_memory_sweep_4gpu/20260429_015822/gpu2/collection_summary.json"
+    },
+    {
+      "num_items": 40,
+      "num_rows": 50,
+      "shard": "gpu3",
+      "summary_path": "artifacts/collect_goal_probe_memory_sweep_4gpu/20260429_015822/gpu3/collection_summary.json"
+    }
+  ],
+  "success_rate": 0.516
+}
