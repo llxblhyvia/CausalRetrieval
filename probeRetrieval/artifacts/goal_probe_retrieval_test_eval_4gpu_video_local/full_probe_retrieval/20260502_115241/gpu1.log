@@ -23,3 +23,494 @@ If needed, manually set the correct constants in `prismatic/vla/constants.py`!
 Instantiating pretrained VLA policy...
 Downloading shards:   0%|          | 0/4 [00:00<?, ?it/s]Downloading shards: 100%|██████████| 4/4 [00:00<00:00, 2062.86it/s]
 Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:01,  2.34it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  3.16it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:00<00:00,  3.77it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:01<00:00,  4.21it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:01<00:00,  3.75it/s]
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Loaded model: <class 'transformers_modules.openvla.openvla-7b.47a0ec7fc4ec123775a391911046cf33cf9ed83f.modeling_prismatic.OpenVLAForActionPrediction'>
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!
+[Warning]: datasets path /network/rit/lab/wang_lab_cs/yhan/repos/LIBERO/libero/datasets does not exist!

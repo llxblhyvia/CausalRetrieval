@@ -1,0 +1,194 @@
+{
+  "by_task": {
+    "push the plate to the front of the stove": {
+      "friction_mu_0.05": {
+        "mean_num_ranked": 0.0,
+        "mean_num_successful_top5": 0.0,
+        "n": 10,
+        "success_rate": 0.5
+      },
+      "friction_mu_0.5": {
+        "mean_num_ranked": 0.0,
+        "mean_num_successful_top5": 0.0,
+        "n": 10,
+        "success_rate": 0.4
+      },
+      "mass_scale_0.05": {
+        "mean_num_ranked": 0.0,
+        "mean_num_successful_top5": 0.0,
+        "n": 10,
+        "success_rate": 0.2
+      },
+      "mass_scale_10": {
+        "mean_num_ranked": 0.0,
+        "mean_num_successful_top5": 0.0,
+        "n": 20,
+        "success_rate": 0.25
+      },
+      "mass_scale_5": {
+        "mean_num_ranked": 0.0,
+        "mean_num_successful_top5": 0.0,
+        "n": 17,
+        "success_rate": 0.17647058823529413
+      }
+    },
+    "put the bowl on the stove": {
+      "friction_mu_0.05": {
+        "mean_num_ranked": 0.0,
+        "mean_num_successful_top5": 0.0,
+        "n": 10,
+        "success_rate": 0.6
+      },
+      "friction_mu_0.5": {
+        "mean_num_ranked": 0.0,
+        "mean_num_successful_top5": 0.0,
+        "n": 10,
+        "success_rate": 0.6
+      },
+      "mass_scale_0.05": {
+        "mean_num_ranked": 0.0,
+        "mean_num_successful_top5": 0.0,
+        "n": 11,
+        "success_rate": 0.5454545454545454
+      },
+      "mass_scale_10": {
+        "mean_num_ranked": 0.0,
+        "mean_num_successful_top5": 0.0,
+        "n": 20,
+        "success_rate": 0.55
+      },
+      "mass_scale_5": {
+        "mean_num_ranked": 0.0,
+        "mean_num_successful_top5": 0.0,
+        "n": 20,
+        "success_rate": 0.65
+      }
+    },
+    "put the bowl on top of the cabinet": {
+      "friction_mu_0.05": {
+        "mean_num_ranked": 0.0,
+        "mean_num_successful_top5": 0.0,
+        "n": 10,
+        "success_rate": 0.7
+      },
+      "friction_mu_0.5": {
+        "mean_num_ranked": 0.0,
+        "mean_num_successful_top5": 0.0,
+        "n": 10,
+        "success_rate": 0.6
+      },
+      "mass_scale_0.05": {
+        "mean_num_ranked": 0.0,
+        "mean_num_successful_top5": 0.0,
+        "n": 10,
+        "success_rate": 0.7
+      },
+      "mass_scale_10": {
+        "mean_num_ranked": 0.0,
+        "mean_num_successful_top5": 0.0,
+        "n": 11,
+        "success_rate": 0.6363636363636364
+      },
+      "mass_scale_5": {
+        "mean_num_ranked": 0.0,
+        "mean_num_successful_top5": 0.0,
+        "n": 10,
+        "success_rate": 0.6
+      }
+    },
+    "put the cream cheese in the bowl": {
+      "friction_mu_0.05": {
+        "mean_num_ranked": 0.0,
+        "mean_num_successful_top5": 0.0,
+        "n": 20,
+        "success_rate": 0.3
+      },
+      "friction_mu_0.5": {
+        "mean_num_ranked": 0.0,
+        "mean_num_successful_top5": 0.0,
+        "n": 20,
+        "success_rate": 0.25
+      },
+      "mass_scale_0.05": {
+        "mean_num_ranked": 0.0,
+        "mean_num_successful_top5": 0.0,
+        "n": 20,
+        "success_rate": 0.25
+      },
+      "mass_scale_10": {
+        "mean_num_ranked": 0.0,
+        "mean_num_successful_top5": 0.0,
+        "n": 20,
+        "success_rate": 0.25
+      },
+      "mass_scale_5": {
+        "mean_num_ranked": 0.0,
+        "mean_num_successful_top5": 0.0,
+        "n": 20,
+        "success_rate": 0.25
+      }
+    },
+    "put the wine bottle on top of the cabinet": {
+      "friction_mu_0.05": {
+        "mean_num_ranked": 0.0,
+        "mean_num_successful_top5": 0.0,
+        "n": 10,
+        "success_rate": 0.6
+      },
+      "friction_mu_0.5": {
+        "mean_num_ranked": 0.0,
+        "mean_num_successful_top5": 0.0,
+        "n": 10,
+        "success_rate": 0.7
+      },
+      "mass_scale_0.05": {
+        "mean_num_ranked": 0.0,
+        "mean_num_successful_top5": 0.0,
+        "n": 10,
+        "success_rate": 1.0
+      },
+      "mass_scale_10": {
+        "mean_num_ranked": 0.0,
+        "mean_num_successful_top5": 0.0,
+        "n": 10,
+        "success_rate": 0.6
+      },
+      "mass_scale_5": {
+        "mean_num_ranked": 0.0,
+        "mean_num_successful_top5": 0.0,
+        "n": 10,
+        "success_rate": 0.9
+      }
+    }
+  },
+  "overall": {
+    "num_episodes": 339,
+    "success_rate": 0.46607669616519176
+  },
+  "shards": [
+    {
+      "episodes_path": "/network/rit/lab/wang_lab_cs/yhan/CausalRetrieval/probeRetrieval/artifacts/goal_probe_retrieval_test_eval_4gpu_video_local/probe_only/20260502_165701/gpu0/probe_retrieval_test_episodes.jsonl",
+      "num_rows": 167,
+      "shard": "gpu0",
+      "summary_path": "/network/rit/lab/wang_lab_cs/yhan/CausalRetrieval/probeRetrieval/artifacts/goal_probe_retrieval_test_eval_4gpu_video_local/probe_only/20260502_165701/gpu0/probe_retrieval_test_summary.json"
+    },
+    {
+      "episodes_path": "/network/rit/lab/wang_lab_cs/yhan/CausalRetrieval/probeRetrieval/artifacts/goal_probe_retrieval_test_eval_4gpu_video_local/probe_only/20260502_165701/gpu1/probe_retrieval_test_episodes.jsonl",
+      "num_rows": 71,
+      "shard": "gpu1",
+      "summary_path": "/network/rit/lab/wang_lab_cs/yhan/CausalRetrieval/probeRetrieval/artifacts/goal_probe_retrieval_test_eval_4gpu_video_local/probe_only/20260502_165701/gpu1/probe_retrieval_test_summary.json"
+    },
+    {
+      "episodes_path": "/network/rit/lab/wang_lab_cs/yhan/CausalRetrieval/probeRetrieval/artifacts/goal_probe_retrieval_test_eval_4gpu_video_local/probe_only/20260502_165701/gpu2/probe_retrieval_test_episodes.jsonl",
+      "num_rows": 51,
+      "shard": "gpu2",
+      "summary_path": "/network/rit/lab/wang_lab_cs/yhan/CausalRetrieval/probeRetrieval/artifacts/goal_probe_retrieval_test_eval_4gpu_video_local/probe_only/20260502_165701/gpu2/probe_retrieval_test_summary.json"
+    },
+    {
+      "episodes_path": "/network/rit/lab/wang_lab_cs/yhan/CausalRetrieval/probeRetrieval/artifacts/goal_probe_retrieval_test_eval_4gpu_video_local/probe_only/20260502_165701/gpu3/probe_retrieval_test_episodes.jsonl",
+      "num_rows": 50,
+      "shard": "gpu3",
+      "summary_path": "/network/rit/lab/wang_lab_cs/yhan/CausalRetrieval/probeRetrieval/artifacts/goal_probe_retrieval_test_eval_4gpu_video_local/probe_only/20260502_165701/gpu3/probe_retrieval_test_summary.json"
+    }
+  ]
+}

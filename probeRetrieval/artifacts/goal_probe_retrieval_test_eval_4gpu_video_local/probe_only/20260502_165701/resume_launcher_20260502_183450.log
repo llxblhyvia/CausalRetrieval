@@ -1,0 +1,7 @@
+nohup: ignoring input
+Launched 4 resume workers.
+Run directory: /network/rit/lab/wang_lab_cs/yhan/CausalRetrieval/probeRetrieval/artifacts/goal_probe_retrieval_test_eval_4gpu_video_local/probe_only/20260502_165701
+PIDs saved to: /network/rit/lab/wang_lab_cs/yhan/CausalRetrieval/probeRetrieval/artifacts/goal_probe_retrieval_test_eval_4gpu_video_local/probe_only/20260502_165701/resume_pids.txt
+Logs: /network/rit/lab/wang_lab_cs/yhan/CausalRetrieval/probeRetrieval/artifacts/goal_probe_retrieval_test_eval_4gpu_video_local/probe_only/20260502_165701/gpu*.resume.log
+Resume workers finished. Merging shards...
+Merged summary: /network/rit/lab/wang_lab_cs/yhan/CausalRetrieval/probeRetrieval/artifacts/goal_probe_retrieval_test_eval_4gpu_video_local/probe_only/20260502_165701/merged/probe_retrieval_test_summary.json

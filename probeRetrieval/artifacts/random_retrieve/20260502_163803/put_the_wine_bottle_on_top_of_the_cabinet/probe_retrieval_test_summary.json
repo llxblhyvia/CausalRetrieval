@@ -1,0 +1,40 @@
+{
+  "by_task": {
+    "put the wine bottle on top of the cabinet": {
+      "friction_mu_0.05": {
+        "mean_num_ranked": 4.5,
+        "mean_num_successful_top5": 3.2,
+        "n": 10,
+        "success_rate": 0.8
+      },
+      "friction_mu_0.5": {
+        "mean_num_ranked": 3.0,
+        "mean_num_successful_top5": 2.3,
+        "n": 10,
+        "success_rate": 0.6
+      },
+      "mass_scale_0.05": {
+        "mean_num_ranked": 4.5,
+        "mean_num_successful_top5": 3.2,
+        "n": 10,
+        "success_rate": 0.8
+      },
+      "mass_scale_10": {
+        "mean_num_ranked": 4.5,
+        "mean_num_successful_top5": 3.4,
+        "n": 10,
+        "success_rate": 0.8
+      },
+      "mass_scale_5": {
+        "mean_num_ranked": 4.5,
+        "mean_num_successful_top5": 3.3,
+        "n": 10,
+        "success_rate": 0.9
+      }
+    }
+  },
+  "overall": {
+    "num_episodes": 50,
+    "success_rate": 0.78
+  }
+}

@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import json
 import random
 from collections import deque
 from pathlib import Path
@@ -75,6 +76,38 @@ def summarize_rows(rows: Sequence[Mapping[str, Any]]) -> Dict[str, Any]:
     return summary
 
 
+def load_jsonl(path: Path) -> list[dict[str, Any]]:
+    if not path.exists():
+        return []
+    rows: list[dict[str, Any]] = []
+    with path.open("r", encoding="utf-8") as f:
+        for line in f:
+            if line.strip():
+                rows.append(json.loads(line))
+    return rows
+
+
+def completed_key(row: Mapping[str, Any]) -> tuple[int, str, int]:
+    return (int(row["task_id"]), str(row["setting_name"]), int(row["episode_idx"]))
+
+
+def emphasize_probe_frames(
+    *,
+    pre_probe_frame: np.ndarray | None,
+    probe_frames: Sequence[np.ndarray],
+    hold_frames: int,
+    frame_repeat: int,
+) -> list[np.ndarray]:
+    frames: list[np.ndarray] = []
+    if pre_probe_frame is not None and hold_frames > 0:
+        frames.extend([pre_probe_frame] * int(hold_frames))
+    for frame in probe_frames:
+        frames.extend([frame] * max(int(frame_repeat), 1))
+    if probe_frames and hold_frames > 0:
+        frames.extend([probe_frames[-1]] * int(hold_frames))
+    return frames
+
+
 def run_single_episode(
     *,
     env: Any,
@@ -99,6 +132,8 @@ def run_single_episode(
     video_dir: Path,
     video_fps: int,
     variant: str,
+    probe_video_hold_frames: int,
+    probe_video_frame_repeat: int,
 ) -> Dict[str, Any]:
     from experiments.robot.libero.libero_utils import get_libero_dummy_action
     from experiments.robot.libero.run_libero_eval import prepare_observation
@@ -172,8 +207,14 @@ def run_single_episode(
                     obs, probe_result, probe_frames = run_probe(env, cfg, handles, detector, obs)
                     probe_end_step = step + int(probe_result["probe_num_steps"])
                     if save_video:
-                        extend_frames(probe_clip_frames, probe_frames)
-                        extend_frames(full_frames, probe_frames)
+                        emphasized_probe_frames = emphasize_probe_frames(
+                            pre_probe_frame=img,
+                            probe_frames=probe_frames,
+                            hold_frames=int(probe_video_hold_frames),
+                            frame_repeat=int(probe_video_frame_repeat),
+                        )
+                        extend_frames(probe_clip_frames, emphasized_probe_frames)
+                        extend_frames(full_frames, emphasized_probe_frames)
                     action_queue.clear()
                     query_features = {
                         "probe_start_step": float(step),
@@ -327,7 +368,20 @@ def main() -> None:
     parser.add_argument("--save_video", action="store_true")
     parser.add_argument("--video_every", type=int, default=0)
     parser.add_argument("--video_fps", type=int, default=20)
+    parser.add_argument(
+        "--probe_video_hold_frames",
+        type=int,
+        default=10,
+        help="Repeat the frame before and after probing so the probe segment is visible in rollout videos.",
+    )
+    parser.add_argument(
+        "--probe_video_frame_repeat",
+        type=int,
+        default=4,
+        help="Repeat each probe step frame this many times in saved rollout videos.",
+    )
     parser.add_argument("--variant", choices=VARIANTS, default="full_probe_retrieval")
+    parser.add_argument("--resume", action="store_true", help="Skip episodes already present in the output jsonl.")
     args = parser.parse_args()
 
     cfg: Dict[str, Any] = {
@@ -399,13 +453,19 @@ def main() -> None:
         else:
             setting["setting_name"] = f"mass_scale_{setting['mass_scale']:g}"
 
-    rows = []
+    rows = load_jsonl(log_path) if args.resume else []
+    done = {completed_key(row) for row in rows}
+    if rows:
+        write_json(output_dir / "probe_retrieval_test_summary.json", summarize_rows(rows))
     for task_id in task_ids:
         task = task_suite.get_task(task_id)
         env, task_description = make_env_for_task(task, real_cfg)
         try:
             for setting in settings:
                 for episode_idx in range(int(args.episodes_per_setting)):
+                    key = (int(task_id), str(setting["setting_name"]), int(episode_idx))
+                    if key in done:
+                        continue
                     save_video = bool(args.save_video) and should_save_video(episode_idx, max(int(args.video_every), 1))
                     row = run_single_episode(
                         env=env,
@@ -430,9 +490,13 @@ def main() -> None:
                         video_dir=video_dir,
                         video_fps=int(args.video_fps),
                         variant=str(args.variant),
+                        probe_video_hold_frames=int(args.probe_video_hold_frames),
+                        probe_video_frame_repeat=int(args.probe_video_frame_repeat),
                     )
                     rows.append(row)
+                    done.add(completed_key(row))
                     append_jsonl(log_path, row)
+                    write_json(output_dir / "probe_retrieval_test_summary.json", summarize_rows(rows))
         finally:
             env.close()
 

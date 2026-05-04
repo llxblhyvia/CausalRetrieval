@@ -1,0 +1,40 @@
+{
+  "by_task": {
+    "put the cream cheese in the bowl": {
+      "friction_mu_0.05": {
+        "mean_num_ranked": 5.0,
+        "mean_num_successful_top5": 0.8,
+        "n": 10,
+        "success_rate": 0.3
+      },
+      "friction_mu_0.5": {
+        "mean_num_ranked": 5.0,
+        "mean_num_successful_top5": 0.9,
+        "n": 10,
+        "success_rate": 0.2
+      },
+      "mass_scale_0.05": {
+        "mean_num_ranked": 4.5,
+        "mean_num_successful_top5": 0.6,
+        "n": 10,
+        "success_rate": 0.2
+      },
+      "mass_scale_10": {
+        "mean_num_ranked": 5.0,
+        "mean_num_successful_top5": 1.7,
+        "n": 10,
+        "success_rate": 0.1
+      },
+      "mass_scale_5": {
+        "mean_num_ranked": 4.5,
+        "mean_num_successful_top5": 0.8,
+        "n": 10,
+        "success_rate": 0.4
+      }
+    }
+  },
+  "overall": {
+    "num_episodes": 50,
+    "success_rate": 0.24
+  }
+}

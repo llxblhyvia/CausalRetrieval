@@ -1,0 +1,30 @@
+nohup: ignoring input
+============================================================
+Starting variant: full_probe_retrieval
+Output root: artifacts/goal_probe_retrieval_test_eval_4gpu_video_local/full_probe_retrieval_visible_probe
+Started at: Sun May  3 02:36:28 AM EDT 2026
+============================================================
+Launched 4 workers in background.
+Run directory: artifacts/goal_probe_retrieval_test_eval_4gpu_video_local/full_probe_retrieval_visible_probe/20260503_023628
+PIDs saved to: artifacts/goal_probe_retrieval_test_eval_4gpu_video_local/full_probe_retrieval_visible_probe/20260503_023628/pids.txt
+Waiting for workers to finish...
+All workers finished.
+Merging variant full_probe_retrieval: artifacts/goal_probe_retrieval_test_eval_4gpu_video_local/full_probe_retrieval_visible_probe/20260503_023628
+Finished variant: full_probe_retrieval
+Summary: artifacts/goal_probe_retrieval_test_eval_4gpu_video_local/full_probe_retrieval_visible_probe/20260503_023628/merged/probe_retrieval_test_summary.json
+Finished at: Sun May  3 05:46:09 AM EDT 2026
+============================================================
+Starting variant: probe_only
+Output root: artifacts/goal_probe_retrieval_test_eval_4gpu_video_local/probe_only_visible_probe
+Started at: Sun May  3 05:46:09 AM EDT 2026
+============================================================
+Launched 4 workers in background.
+Run directory: artifacts/goal_probe_retrieval_test_eval_4gpu_video_local/probe_only_visible_probe/20260503_054609
+PIDs saved to: artifacts/goal_probe_retrieval_test_eval_4gpu_video_local/probe_only_visible_probe/20260503_054609/pids.txt
+Waiting for workers to finish...
+All workers finished.
+Merging variant probe_only: artifacts/goal_probe_retrieval_test_eval_4gpu_video_local/probe_only_visible_probe/20260503_054609
+Finished variant: probe_only
+Summary: artifacts/goal_probe_retrieval_test_eval_4gpu_video_local/probe_only_visible_probe/20260503_054609/merged/probe_retrieval_test_summary.json
+Finished at: Sun May  3 08:59:55 AM EDT 2026
+All requested visible-probe runs finished at: Sun May  3 08:59:55 AM EDT 2026

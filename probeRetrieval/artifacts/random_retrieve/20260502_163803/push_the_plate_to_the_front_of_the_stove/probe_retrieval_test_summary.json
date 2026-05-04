@@ -1,0 +1,40 @@
+{
+  "by_task": {
+    "push the plate to the front of the stove": {
+      "friction_mu_0.05": {
+        "mean_num_ranked": 4.0,
+        "mean_num_successful_top5": 2.3,
+        "n": 10,
+        "success_rate": 0.1
+      },
+      "friction_mu_0.5": {
+        "mean_num_ranked": 4.5,
+        "mean_num_successful_top5": 2.4,
+        "n": 10,
+        "success_rate": 0.3
+      },
+      "mass_scale_0.05": {
+        "mean_num_ranked": 4.5,
+        "mean_num_successful_top5": 2.1,
+        "n": 10,
+        "success_rate": 0.2
+      },
+      "mass_scale_10": {
+        "mean_num_ranked": 5.0,
+        "mean_num_successful_top5": 2.5,
+        "n": 10,
+        "success_rate": 0.2
+      },
+      "mass_scale_5": {
+        "mean_num_ranked": 4.5,
+        "mean_num_successful_top5": 2.5,
+        "n": 10,
+        "success_rate": 0.3
+      }
+    }
+  },
+  "overall": {
+    "num_episodes": 50,
+    "success_rate": 0.22
+  }
+}

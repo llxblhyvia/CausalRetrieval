@@ -1,0 +1,40 @@
+{
+  "by_task": {
+    "put the bowl on the stove": {
+      "friction_mu_0.05": {
+        "mean_num_ranked": 0.0,
+        "mean_num_successful_top5": 0.0,
+        "n": 10,
+        "success_rate": 0.6
+      },
+      "friction_mu_0.5": {
+        "mean_num_ranked": 0.0,
+        "mean_num_successful_top5": 0.0,
+        "n": 10,
+        "success_rate": 0.9
+      },
+      "mass_scale_0.05": {
+        "mean_num_ranked": 0.0,
+        "mean_num_successful_top5": 0.0,
+        "n": 10,
+        "success_rate": 0.7
+      },
+      "mass_scale_10": {
+        "mean_num_ranked": 0.0,
+        "mean_num_successful_top5": 0.0,
+        "n": 10,
+        "success_rate": 0.6
+      },
+      "mass_scale_5": {
+        "mean_num_ranked": 0.0,
+        "mean_num_successful_top5": 0.0,
+        "n": 10,
+        "success_rate": 0.7
+      }
+    }
+  },
+  "overall": {
+    "num_episodes": 50,
+    "success_rate": 0.7
+  }
+}

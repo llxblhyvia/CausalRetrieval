@@ -1,0 +1,72 @@
+{
+  "by_task": {
+    "push the plate to the front of the stove": {
+      "friction_mu_0.05": {
+        "mean_num_ranked": 0.0,
+        "mean_num_successful_top5": 0.0,
+        "n": 10,
+        "success_rate": 0.5
+      },
+      "friction_mu_0.5": {
+        "mean_num_ranked": 0.0,
+        "mean_num_successful_top5": 0.0,
+        "n": 10,
+        "success_rate": 0.4
+      },
+      "mass_scale_0.05": {
+        "mean_num_ranked": 0.0,
+        "mean_num_successful_top5": 0.0,
+        "n": 10,
+        "success_rate": 0.1
+      },
+      "mass_scale_10": {
+        "mean_num_ranked": 0.0,
+        "mean_num_successful_top5": 0.0,
+        "n": 10,
+        "success_rate": 0.1
+      },
+      "mass_scale_5": {
+        "mean_num_ranked": 0.0,
+        "mean_num_successful_top5": 0.0,
+        "n": 10,
+        "success_rate": 0.1
+      }
+    },
+    "put the cream cheese in the bowl": {
+      "friction_mu_0.05": {
+        "mean_num_ranked": 0.0,
+        "mean_num_successful_top5": 0.0,
+        "n": 10,
+        "success_rate": 0.3
+      },
+      "friction_mu_0.5": {
+        "mean_num_ranked": 0.0,
+        "mean_num_successful_top5": 0.0,
+        "n": 10,
+        "success_rate": 0.1
+      },
+      "mass_scale_0.05": {
+        "mean_num_ranked": 0.0,
+        "mean_num_successful_top5": 0.0,
+        "n": 10,
+        "success_rate": 0.3
+      },
+      "mass_scale_10": {
+        "mean_num_ranked": 0.0,
+        "mean_num_successful_top5": 0.0,
+        "n": 10,
+        "success_rate": 0.3
+      },
+      "mass_scale_5": {
+        "mean_num_ranked": 0.0,
+        "mean_num_successful_top5": 0.0,
+        "n": 10,
+        "success_rate": 0.3
+      }
+    }
+  },
+  "overall": {
+    "num_episodes": 100,
+    "success_rate": 0.25
+  }
+}
